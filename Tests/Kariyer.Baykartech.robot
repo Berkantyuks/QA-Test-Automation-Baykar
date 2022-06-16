@@ -24,8 +24,9 @@ Visitor should be able navigate navbar
     Kariyer.Baykartech.App.Navbar Mouse Over Tests
     Kariyer.Baykartech.App.Click non dropdown sections    ${RUN_LANG}
 
-Visitor should be see login page
+Visitor should be see "Login", "Forget Password", "Create Account" pages
     [Documentation]    All visitors should be see login page as not signed user
     [Tags]    Smoke    Login
     Open Website    ${SITE_URL}${RUN_LANG}
     Kariyer.Baykartech.App.Click login button as not signed user    ${RUN_LANG}
+    Kariyer.Baykartech.App.Click forget password link as not signed user

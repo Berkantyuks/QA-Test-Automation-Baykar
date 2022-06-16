@@ -8,6 +8,7 @@ Resource    ./PO/Homepage.robot
 Resource    ./PO/Kariyer.robot
 Resource    ./PO/Staj.robot
 Resource    ./PO/Dashboard/Sign-In.robot
+Resource    ./PO/Dashboard/Forget-Password.robot
 Resource    ./End-to-End.robot
 
 
@@ -48,6 +49,12 @@ Click login button as not signed user
     [Arguments]    ${LANG}
     Navbar.Click "Dashboard/Login" button    ${LANG}
     Sign-In.Verify Page Loaded
+
+Click forget password link as not signed user
+    Sign-In.Click "Forget Password" link
+    Forget-Password.Verify Page Loaded
+
+Click create account link as not signed user
 
 
 
