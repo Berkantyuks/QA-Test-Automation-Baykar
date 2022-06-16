@@ -4,6 +4,7 @@ Resource    ./GlobalVariables.robot
 
 *** Variables ***
 
+
 *** Keywords ***
 Start Baykar Web Test
     [Arguments]    ${BROWSER}

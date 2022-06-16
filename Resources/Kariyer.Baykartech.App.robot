@@ -7,6 +7,7 @@ Resource    ./PO/Footer.robot
 Resource    ./PO/Homepage.robot
 Resource    ./PO/Kariyer.robot
 Resource    ./PO/Staj.robot
+Resource    ./PO/Dashboard/Sign-In.robot
 Resource    ./End-to-End.robot
 
 
@@ -42,8 +43,12 @@ Click non dropdown sections
     Navbar.Change Language
     Run Keyword If    "${LANG}" == "tr"   Common.Verify Page Loaded    tr    ELSE    Common.Verify Page Loaded    en
 
-    Navbar.Click "Dashboard" button    ${LANG}
-    sleep  3s
+
+Click login button as not signed user
+    [Arguments]    ${LANG}
+    Navbar.Click "Dashboard/Login" button    ${LANG}
+    Sign-In.Verify Page Loaded
+
 
 
 
