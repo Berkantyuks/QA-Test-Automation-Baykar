@@ -11,9 +11,9 @@ Resource    ./End-to-End.robot
 
 
 *** Variables ***
-${OPEN_POZ_SECTION} =    xpath=//h4[.="Baykar'da Açık Pozisyonlar"]
-${BAYKAR_LIFE_SECTION} =    xpath=//h4[.='Baykar İnsan Kaynakları']
-${SSS_SECTION} =    xpath=//h2[.='Sıkça Sorulan Sorular']
+${OPEN_POZ_SECTION} =    css=div[id='services']
+${BAYKAR_LIFE_SECTION} =    css=div[id='portfolio']
+${SSS_SECTION} =    css=div[id='sss']
 
 
 
@@ -42,7 +42,6 @@ Click non dropdown sections
     Navbar.Change Language
     Common.Verify Page Loaded    tr
 
-    sleep  2s
     Navbar.Click "Dashboard" button    ${LANG}
     sleep  3s
 

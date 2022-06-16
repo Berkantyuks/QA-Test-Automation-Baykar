@@ -46,7 +46,6 @@ Click "BAYKAR" Section
 
     ${sec_num} =  Set Variable   6
     Click Link    ${NAVBAR_SECTION}\[${sec_num}\]/a
-    Sleep    1s
     ${handle} =    Get Window Handles
     Switch Window    ${handle}[1]
 
@@ -56,6 +55,6 @@ Change Language
 
 Click "Dashboard" button
     [Arguments]    ${LANG}
-    [Documentation]    Clicks dashboard button in navbar located right
+    [Documentation]    Clicks dashboard button by lang, in navbar located right
     ${NAVBAR_DASHBOARD_BUTTON} =  Set Variable   xpath=//a[contains(@href, '/${LANG}/dashboard')]
     Click Link    ${NAVBAR_DASHBOARD_BUTTON}

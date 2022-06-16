@@ -7,6 +7,6 @@ Library    SeleniumLibrary
 
 *** Keywords ***
 Verify Section is Visible
-    [Arguments]    ${SECTION_TEXT_ELEMENT}
-    Wait Until Element Is Visible    ${SECTION_TEXT_ELEMENT}
-    Element Should Be Visible    ${SECTION_TEXT_ELEMENT}
+    [Arguments]    ${SECTION_ELEMENT}
+    Wait Until Element Is Visible    ${SECTION_ELEMENT}
+    Element Should Be Visible    ${SECTION_ELEMENT}
