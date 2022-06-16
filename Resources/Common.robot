@@ -2,8 +2,9 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${HR_HOME_ELEMENT} =    xpath=//button[@class='fix-btn']
-${HR_HOME_TEXT} =    AÇIK POZİSYONLAR
+${BAYKAR_LOGO_TR} =    xpath=//img[@src='https://cdnik.baykartech.com/media/images/contents/hr-logo-white.png']
+${BAYKAR_LOGO_EN} =    xpath=//img[@src='https://cdnik.baykartech.com/media/images/contents/Baykar_Career-White.png']
+
 
 *** Keywords ***
 Start Baykar Web Test
@@ -14,6 +15,11 @@ Start Baykar Web Test
 Open Website
     [Arguments]    ${SITE_URL}
     Go To      ${SITE_URL}
+
+Verify Page Loaded
+    [Arguments]    ${LANG}
+    [Documentation]    Verify all pages successfully loaded
+    Wait Until Element Is Visible    ${BAYKAR_LOGO_${LANG}}
 
 End Baykar Web Test
     Close Browser
