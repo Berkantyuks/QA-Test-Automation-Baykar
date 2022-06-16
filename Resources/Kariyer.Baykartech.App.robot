@@ -1,12 +1,14 @@
 *** Settings ***
 Library    SeleniumLibrary
 
+Resource    ./Common.robot
 Resource    ./PO/Navbar.robot
 Resource    ./PO/Footer.robot
 Resource    ./PO/Homepage.robot
 Resource    ./PO/Kariyer.robot
 Resource    ./PO/Staj.robot
 Resource    ./End-to-End.robot
+
 
 *** Variables ***
 ${OPEN_POZ_SECTION} =    xpath=//h4[.="Baykar'da Açık Pozisyonlar"]
@@ -34,7 +36,11 @@ Click non dropdown sections
     End-to-End.Verify "baykartech.com" opens
 
     Navbar.Change Language
-    Sleep    2s
+    Common.Verify Page Loaded    en
+
+    Navbar.Change Language
+    Common.Verify Page Loaded    tr
+
 
 
 

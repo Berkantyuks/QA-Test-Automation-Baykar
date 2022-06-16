@@ -1,10 +1,8 @@
 *** Settings ***
 Library    SeleniumLibrary
+Resource    ./GlobalVariables.robot
 
 *** Variables ***
-${BAYKAR_LOGO_TR} =    xpath=//img[@src='https://cdnik.baykartech.com/media/images/contents/hr-logo-white.png']
-${BAYKAR_LOGO_EN} =    xpath=//img[@src='https://cdnik.baykartech.com/media/images/contents/Baykar_Career-White.png']
-
 
 *** Keywords ***
 Start Baykar Web Test
