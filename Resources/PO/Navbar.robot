@@ -1,10 +1,11 @@
 *** Settings ***
 Library    SeleniumLibrary
 
+Resource    ../GlobalVariables.robot
+
 *** Variables ***
 ${NAVBAR_SECTION} =    xpath=//*[@id="navbar-menu"]/ul/li
 ${FIRST_DROPDOWN_ELEMENT} =   /ul/li[1]/a
-
 *** Keywords ***
 Mouse Over "Kariyer" Section
     [Documentation]    [1] is a first section in navbar
@@ -37,3 +38,11 @@ Click "S.S.S" Section
 
     ${sec_num} =  Set Variable   5
     Click Link    ${NAVBAR_SECTION}\[${sec_num}\]/a
+
+Click "BAYKAR" Section
+
+    [Documentation]    [6] is a second section in navbar
+
+    ${sec_num} =  Set Variable   6
+    Click Link    ${NAVBAR_SECTION}\[${sec_num}\]/a
+    Switch Window    title:${BAYKAR_MAIN_TITLE}

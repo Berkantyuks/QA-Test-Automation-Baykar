@@ -6,6 +6,7 @@ Resource    ./PO/Footer.robot
 Resource    ./PO/Homepage.robot
 Resource    ./PO/Kariyer.robot
 Resource    ./PO/Staj.robot
+Resource    ./End-to-End.robot
 
 *** Variables ***
 ${OPEN_POZ_SECTION} =    xpath=//h4[.="Baykar'da Açık Pozisyonlar"]
@@ -22,9 +23,15 @@ Navbar Mouse Over Tests
 Click non dropdown sections
     Navbar.Click "Açık Pozisyonlar" Section
     Homepage.Verify Section is Visible    ${OPEN_POZ_SECTION}
+
     Navbar.Click "Baykarda Yaşam" Section
     Homepage.Verify Section is Visible    ${BAYKAR_LIFE_SECTION}
+
     Navbar.Click "S.S.S" Section
     Homepage.Verify Section is Visible    ${SSS_SECTION}
+
+    Navbar.Click "BAYKAR" Section
+    End-to-End.Verify "baykartech.com" opens
+
 
 
