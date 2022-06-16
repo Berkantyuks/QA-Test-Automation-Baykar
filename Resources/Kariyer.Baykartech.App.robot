@@ -12,3 +12,7 @@ Resource    ./PO/Staj.robot
 
 
 *** Keywords ***
+Navbar Mouse Over Tests
+    Navbar.Mouse Over "Kariyer" Section
+    Navbar.Mouse Over "Staj" Section
+

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220616 21:46:48.464" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220616 22:27:15.084" rpa="false" schemaversion="3">
 <suite id="s1" name="Tests" source="C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\tests">
 <suite id="s1-s1" name="Kariyer.Baykartech" source="C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\tests\Kariyer.Baykartech.robot">
 <test id="s1-s1-t1" name="Visitor should be able enter site" line="14">
@@ -9,49 +9,150 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220616 21:46:48.698" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220616 21:46:48.698" endtime="20220616 21:46:50.241"/>
+<msg timestamp="20220616 22:27:15.276" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220616 22:27:15.276" endtime="20220616 22:27:16.397"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220616 21:46:50.241" endtime="20220616 21:46:50.357"/>
+<status status="PASS" starttime="20220616 22:27:16.397" endtime="20220616 22:27:16.513"/>
 </kw>
-<status status="PASS" starttime="20220616 21:46:48.697" endtime="20220616 21:46:50.357"/>
+<status status="PASS" starttime="20220616 22:27:15.276" endtime="20220616 22:27:16.514"/>
 </kw>
 <kw name="Open Website" library="Common">
 <arg>${SITE_URL_TR}</arg>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${SITE_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220616 21:46:50.359" level="INFO">Opening url 'https://kariyer.baykartech.com/tr/'</msg>
-<status status="PASS" starttime="20220616 21:46:50.359" endtime="20220616 21:46:55.064"/>
+<msg timestamp="20220616 22:27:16.515" level="INFO">Opening url 'https://kariyer.baykartech.com/tr/'</msg>
+<status status="PASS" starttime="20220616 22:27:16.514" endtime="20220616 22:27:21.049"/>
 </kw>
-<status status="PASS" starttime="20220616 21:46:50.358" endtime="20220616 21:46:55.064"/>
+<status status="PASS" starttime="20220616 22:27:16.514" endtime="20220616 22:27:21.049"/>
 </kw>
 <kw name="End Baykar Web Test" library="Common" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220616 21:46:55.065" endtime="20220616 21:46:57.171"/>
+<status status="PASS" starttime="20220616 22:27:21.050" endtime="20220616 22:27:23.147"/>
 </kw>
-<status status="PASS" starttime="20220616 21:46:55.065" endtime="20220616 21:46:57.171"/>
+<status status="PASS" starttime="20220616 22:27:21.050" endtime="20220616 22:27:23.148"/>
 </kw>
-<status status="PASS" starttime="20220616 21:46:48.696" endtime="20220616 21:46:57.171"/>
+<doc>All visitors should be able enter site</doc>
+<tag>Common</tag>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20220616 22:27:15.274" endtime="20220616 22:27:23.148"/>
 </test>
-<status status="PASS" starttime="20220616 21:46:48.487" endtime="20220616 21:46:57.172"/>
+<test id="s1-s1-t2" name="Visitor should be able navigate navbar" line="19">
+<kw name="Start Baykar Web Test" library="Common" type="SETUP">
+<arg>${BROWSER}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220616 22:27:23.150" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220616 22:27:23.150" endtime="20220616 22:27:24.196"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220616 22:27:24.196" endtime="20220616 22:27:24.315"/>
+</kw>
+<status status="PASS" starttime="20220616 22:27:23.150" endtime="20220616 22:27:24.315"/>
+</kw>
+<kw name="Open Website" library="Common">
+<arg>${SITE_URL_TR}</arg>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${SITE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220616 22:27:24.316" level="INFO">Opening url 'https://kariyer.baykartech.com/tr/'</msg>
+<status status="PASS" starttime="20220616 22:27:24.316" endtime="20220616 22:27:28.813"/>
+</kw>
+<status status="PASS" starttime="20220616 22:27:24.315" endtime="20220616 22:27:28.813"/>
+</kw>
+<kw name="Navbar Mouse Over Tests" library="Kariyer.Baykartech.App">
+<kw name="Mouse Over &quot;Kariyer&quot; Section" library="Navbar">
+<doc>[1] is a first section in navbar</doc>
+<kw name="Set Variable" library="BuiltIn">
+<var>${sec_num}</var>
+<arg>1</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220616 22:27:28.814" level="INFO">${sec_num} = 1</msg>
+<status status="PASS" starttime="20220616 22:27:28.814" endtime="20220616 22:27:28.814"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${NAVBAR_SECTION}\[${sec_num}\]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220616 22:27:28.815" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="navbar-menu"]/ul/li[1]'.</msg>
+<status status="PASS" starttime="20220616 22:27:28.814" endtime="20220616 22:27:29.097"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${NAVBAR_SECTION}\[${sec_num}\]/ul/li[1]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220616 22:27:29.098" endtime="20220616 22:27:29.563"/>
+</kw>
+<status status="PASS" starttime="20220616 22:27:28.814" endtime="20220616 22:27:29.564"/>
+</kw>
+<kw name="Mouse Over &quot;Staj&quot; Section" library="Navbar">
+<doc>[3] is a third section in navbar</doc>
+<kw name="Set Variable" library="BuiltIn">
+<var>${sec_num}</var>
+<arg>3</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220616 22:27:29.564" level="INFO">${sec_num} = 3</msg>
+<status status="PASS" starttime="20220616 22:27:29.564" endtime="20220616 22:27:29.564"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${NAVBAR_SECTION}\[${sec_num}\]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220616 22:27:29.565" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="navbar-menu"]/ul/li[3]'.</msg>
+<status status="PASS" starttime="20220616 22:27:29.564" endtime="20220616 22:27:29.845"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${NAVBAR_SECTION}\[${sec_num}\]/ul/li[1]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220616 22:27:29.845" endtime="20220616 22:27:29.865"/>
+</kw>
+<status status="PASS" starttime="20220616 22:27:29.564" endtime="20220616 22:27:29.865"/>
+</kw>
+<status status="PASS" starttime="20220616 22:27:28.813" endtime="20220616 22:27:29.865"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220616 22:27:31.878" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220616 22:27:29.865" endtime="20220616 22:27:31.878"/>
+</kw>
+<kw name="End Baykar Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220616 22:27:31.879" endtime="20220616 22:27:33.984"/>
+</kw>
+<status status="PASS" starttime="20220616 22:27:31.878" endtime="20220616 22:27:33.984"/>
+</kw>
+<doc>All visitors should be able navigate navbar</doc>
+<tag>Navbar</tag>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20220616 22:27:23.149" endtime="20220616 22:27:33.985"/>
+</test>
+<status status="PASS" starttime="20220616 22:27:15.103" endtime="20220616 22:27:33.986"/>
 </suite>
-<status status="PASS" starttime="20220616 21:46:48.466" endtime="20220616 21:46:57.174"/>
+<status status="PASS" starttime="20220616 22:27:15.085" endtime="20220616 22:27:33.988"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">Common</stat>
+<stat pass="1" fail="0" skip="0">Navbar</stat>
+<stat pass="2" fail="0" skip="0">Smoke</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Kariyer.Baykartech">Tests.Kariyer.Baykartech</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Kariyer.Baykartech">Tests.Kariyer.Baykartech</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20220616 22:27:15.270" level="WARN">Imported resource file 'C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\Resources\PO\Footer.robot' is empty.</msg>
+<msg timestamp="20220616 22:27:15.271" level="WARN">Imported resource file 'C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\Resources\PO\Homepage.robot' is empty.</msg>
+<msg timestamp="20220616 22:27:15.272" level="WARN">Imported resource file 'C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\Resources\PO\Kariyer.robot' is empty.</msg>
+<msg timestamp="20220616 22:27:15.272" level="WARN">Imported resource file 'C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\Resources\PO\Staj.robot' is empty.</msg>
 </errors>
 </robot>
