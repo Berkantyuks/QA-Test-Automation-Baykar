@@ -28,5 +28,6 @@ Visitor should be see "Login", "Forget Password", "Create Account" pages
     [Documentation]    All visitors should be see login page as not signed user
     [Tags]    Smoke    Login
     Open Website    ${SITE_URL}${RUN_LANG}
-    Kariyer.Baykartech.App.Click login button as not signed user    ${RUN_LANG}
-    Kariyer.Baykartech.App.Click forget password link as not signed user
+    Kariyer.Baykartech.App.Click "Login" button as not signed user    ${RUN_LANG}
+    Kariyer.Baykartech.App.Click "Forget Password" link as not signed user
+    Kariyer.Baykartech.App.Click "Create Account" link as not signed user

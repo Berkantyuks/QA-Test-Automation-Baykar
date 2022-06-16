@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220617 02:35:25.704" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220617 02:52:20.242" rpa="false" schemaversion="3">
 <suite id="s1" name="Tests" source="C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\tests">
 <suite id="s1-s1" name="Kariyer.Baykartech" source="C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\tests\Kariyer.Baykartech.robot">
 <test id="s1-s1-t1" name="Visitor should be see &quot;Login&quot;, &quot;Forget Password&quot;, &quot;Create Account&quot; pages" line="27">
@@ -9,26 +9,26 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220617 02:35:25.919" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220617 02:35:25.919" endtime="20220617 02:35:26.979"/>
+<msg timestamp="20220617 02:52:20.466" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220617 02:52:20.466" endtime="20220617 02:52:21.522"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220617 02:35:26.979" endtime="20220617 02:35:27.105"/>
+<status status="PASS" starttime="20220617 02:52:21.523" endtime="20220617 02:52:21.643"/>
 </kw>
-<status status="PASS" starttime="20220617 02:35:25.918" endtime="20220617 02:35:27.105"/>
+<status status="PASS" starttime="20220617 02:52:20.465" endtime="20220617 02:52:21.643"/>
 </kw>
 <kw name="Open Website" library="Common">
 <arg>${SITE_URL}${RUN_LANG}</arg>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${SITE_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220617 02:35:27.106" level="INFO">Opening url 'https://kariyer.baykartech.com/tr'</msg>
-<status status="PASS" starttime="20220617 02:35:27.106" endtime="20220617 02:35:31.731"/>
+<msg timestamp="20220617 02:52:21.645" level="INFO">Opening url 'https://kariyer.baykartech.com/tr'</msg>
+<status status="PASS" starttime="20220617 02:52:21.644" endtime="20220617 02:52:26.335"/>
 </kw>
-<status status="PASS" starttime="20220617 02:35:27.106" endtime="20220617 02:35:31.731"/>
+<status status="PASS" starttime="20220617 02:52:21.644" endtime="20220617 02:52:26.335"/>
 </kw>
-<kw name="Click login button as not signed user" library="Kariyer.Baykartech.App">
+<kw name="Click &quot;Login&quot; button as not signed user" library="Kariyer.Baykartech.App">
 <arg>${RUN_LANG}</arg>
 <kw name="Click &quot;Dashboard/Login&quot; button" library="Navbar">
 <arg>${LANG}</arg>
@@ -37,76 +37,102 @@
 <var>${NAVBAR_DASHBOARD_BUTTON}</var>
 <arg>xpath=//a[contains(@href, '/${LANG}/dashboard')]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220617 02:35:31.734" level="INFO">${NAVBAR_DASHBOARD_BUTTON} = xpath=//a[contains(@href, '/tr/dashboard')]</msg>
-<status status="PASS" starttime="20220617 02:35:31.733" endtime="20220617 02:35:31.734"/>
+<msg timestamp="20220617 02:52:26.336" level="INFO">${NAVBAR_DASHBOARD_BUTTON} = xpath=//a[contains(@href, '/tr/dashboard')]</msg>
+<status status="PASS" starttime="20220617 02:52:26.336" endtime="20220617 02:52:26.336"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${NAVBAR_DASHBOARD_BUTTON}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220617 02:35:31.734" level="INFO">Clicking link 'xpath=//a[contains(@href, '/tr/dashboard')]'.</msg>
-<status status="PASS" starttime="20220617 02:35:31.734" endtime="20220617 02:35:33.322"/>
+<msg timestamp="20220617 02:52:26.337" level="INFO">Clicking link 'xpath=//a[contains(@href, '/tr/dashboard')]'.</msg>
+<status status="PASS" starttime="20220617 02:52:26.336" endtime="20220617 02:52:27.869"/>
 </kw>
-<status status="PASS" starttime="20220617 02:35:31.733" endtime="20220617 02:35:33.322"/>
+<status status="PASS" starttime="20220617 02:52:26.336" endtime="20220617 02:52:27.869"/>
 </kw>
 <kw name="Verify Page Loaded" library="Sign-In">
 <doc>Just check page, we can't login because there is reCAP robot protection :(</doc>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${SIGN_IN_ELEMENT}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220617 02:35:33.323" endtime="20220617 02:35:33.343"/>
+<status status="PASS" starttime="20220617 02:52:27.869" endtime="20220617 02:52:27.894"/>
 </kw>
-<kw name="Page Should Contain Button" library="SeleniumLibrary">
-<arg>${SIGN_IN_ELEMENT}</arg>
-<doc>Verifies button ``locator`` is found from current page.</doc>
-<msg timestamp="20220617 02:35:33.365" level="INFO">Current page contains button 'xpath=//button[@id='kt_sign_in_submit']'.</msg>
-<status status="PASS" starttime="20220617 02:35:33.343" endtime="20220617 02:35:33.365"/>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<arg>${FORGET_PASS_LINK}</arg>
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<msg timestamp="20220617 02:52:27.909" level="INFO">Current page contains link 'xpath=//*[@id="loginForm"]//a[contains(@href, '/password/reset/')]'.</msg>
+<status status="PASS" starttime="20220617 02:52:27.894" endtime="20220617 02:52:27.909"/>
 </kw>
-<status status="PASS" starttime="20220617 02:35:33.323" endtime="20220617 02:35:33.365"/>
+<status status="PASS" starttime="20220617 02:52:27.869" endtime="20220617 02:52:27.909"/>
 </kw>
-<status status="PASS" starttime="20220617 02:35:31.732" endtime="20220617 02:35:33.365"/>
+<status status="PASS" starttime="20220617 02:52:26.335" endtime="20220617 02:52:27.909"/>
 </kw>
-<kw name="Click forget password link as not signed user" library="Kariyer.Baykartech.App">
+<kw name="Click &quot;Forget Password&quot; link as not signed user" library="Kariyer.Baykartech.App">
 <kw name="Click &quot;Forget Password&quot; link" library="Sign-In">
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${FORGET_PASS_LINK}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220617 02:35:33.366" level="INFO">Clicking link 'xpath=//*[@id="loginForm"]//a[@class='link-primary fs-6 fw-bolder']'.</msg>
-<status status="PASS" starttime="20220617 02:35:33.366" endtime="20220617 02:35:33.796"/>
+<msg timestamp="20220617 02:52:27.910" level="INFO">Clicking link 'xpath=//*[@id="loginForm"]//a[contains(@href, '/password/reset/')]'.</msg>
+<status status="PASS" starttime="20220617 02:52:27.910" endtime="20220617 02:52:28.289"/>
 </kw>
-<status status="PASS" starttime="20220617 02:35:33.366" endtime="20220617 02:35:33.796"/>
+<status status="PASS" starttime="20220617 02:52:27.910" endtime="20220617 02:52:28.289"/>
 </kw>
 <kw name="Verify Page Loaded" library="Forget-Password">
 <doc>Just check page, we can't reset password because there is reCAP robot protection :(</doc>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${FORGET_PASS_ELEMENT}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220617 02:35:33.797" endtime="20220617 02:35:33.812"/>
+<status status="PASS" starttime="20220617 02:52:28.290" endtime="20220617 02:52:28.306"/>
 </kw>
-<kw name="Page Should Contain Button" library="SeleniumLibrary">
-<arg>${FORGET_PASS_ELEMENT}</arg>
-<doc>Verifies button ``locator`` is found from current page.</doc>
-<msg timestamp="20220617 02:35:33.834" level="INFO">Current page contains button 'xpath=//button[@id='kt_sign_in_submit']'.</msg>
-<status status="PASS" starttime="20220617 02:35:33.812" endtime="20220617 02:35:33.834"/>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<arg>${CREATE_ACC_LINK}</arg>
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<msg timestamp="20220617 02:52:28.318" level="INFO">Current page contains link 'xpath=//*[@id="loginForm"]//a[contains(@href, '/signup/')]'.</msg>
+<status status="PASS" starttime="20220617 02:52:28.306" endtime="20220617 02:52:28.318"/>
 </kw>
-<status status="PASS" starttime="20220617 02:35:33.797" endtime="20220617 02:35:33.835"/>
+<status status="PASS" starttime="20220617 02:52:28.290" endtime="20220617 02:52:28.318"/>
 </kw>
-<status status="PASS" starttime="20220617 02:35:33.365" endtime="20220617 02:35:33.835"/>
+<status status="PASS" starttime="20220617 02:52:27.910" endtime="20220617 02:52:28.318"/>
+</kw>
+<kw name="Click &quot;Create Account&quot; link as not signed user" library="Kariyer.Baykartech.App">
+<kw name="Click &quot;Create Account&quot; Link" library="Forget-Password">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${CREATE_ACC_LINK}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220617 02:52:28.320" level="INFO">Clicking link 'xpath=//*[@id="loginForm"]//a[contains(@href, '/signup/')]'.</msg>
+<status status="PASS" starttime="20220617 02:52:28.319" endtime="20220617 02:52:28.901"/>
+</kw>
+<status status="PASS" starttime="20220617 02:52:28.319" endtime="20220617 02:52:28.902"/>
+</kw>
+<kw name="Verify Page Loaded" library="Sign-Up">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGN_UP_ELEMENT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220617 02:52:28.902" endtime="20220617 02:52:28.918"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${SIGN_UP_ELEMENT}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220617 02:52:28.924" level="INFO">Current page contains element 'xpath=//form[@id='signUpForm']//input[@name='password2']'.</msg>
+<status status="PASS" starttime="20220617 02:52:28.918" endtime="20220617 02:52:28.924"/>
+</kw>
+<status status="PASS" starttime="20220617 02:52:28.902" endtime="20220617 02:52:28.924"/>
+</kw>
+<status status="PASS" starttime="20220617 02:52:28.319" endtime="20220617 02:52:28.924"/>
 </kw>
 <kw name="End Baykar Web Test" library="Common" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220617 02:35:33.835" endtime="20220617 02:35:35.944"/>
+<status status="PASS" starttime="20220617 02:52:28.925" endtime="20220617 02:52:31.033"/>
 </kw>
-<status status="PASS" starttime="20220617 02:35:33.835" endtime="20220617 02:35:35.945"/>
+<status status="PASS" starttime="20220617 02:52:28.924" endtime="20220617 02:52:31.033"/>
 </kw>
 <doc>All visitors should be see login page as not signed user</doc>
 <tag>Login</tag>
 <tag>Smoke</tag>
-<status status="PASS" starttime="20220617 02:35:25.917" endtime="20220617 02:35:35.945"/>
+<status status="PASS" starttime="20220617 02:52:20.465" endtime="20220617 02:52:31.033"/>
 </test>
-<status status="PASS" starttime="20220617 02:35:25.724" endtime="20220617 02:35:35.946"/>
+<status status="PASS" starttime="20220617 02:52:20.262" endtime="20220617 02:52:31.034"/>
 </suite>
-<status status="PASS" starttime="20220617 02:35:25.705" endtime="20220617 02:35:35.948"/>
+<status status="PASS" starttime="20220617 02:52:20.243" endtime="20220617 02:52:31.036"/>
 </suite>
 <statistics>
 <total>
@@ -122,8 +148,8 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220617 02:35:25.905" level="WARN">Imported resource file 'C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\Resources\PO\Footer.robot' is empty.</msg>
-<msg timestamp="20220617 02:35:25.908" level="WARN">Imported resource file 'C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\Resources\PO\Kariyer.robot' is empty.</msg>
-<msg timestamp="20220617 02:35:25.909" level="WARN">Imported resource file 'C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\Resources\PO\Staj.robot' is empty.</msg>
+<msg timestamp="20220617 02:52:20.452" level="WARN">Imported resource file 'C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\Resources\PO\Footer.robot' is empty.</msg>
+<msg timestamp="20220617 02:52:20.455" level="WARN">Imported resource file 'C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\Resources\PO\Kariyer.robot' is empty.</msg>
+<msg timestamp="20220617 02:52:20.456" level="WARN">Imported resource file 'C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\Resources\PO\Staj.robot' is empty.</msg>
 </errors>
 </robot>
