@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220617 01:15:37.542" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220617 01:20:04.041" rpa="false" schemaversion="3">
 <suite id="s1" name="Tests" source="C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\tests">
 <suite id="s1-s1" name="Kariyer.Baykartech" source="C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\tests\Kariyer.Baykartech.robot">
 <test id="s1-s1-t1" name="Visitor should be able navigate navbar" line="20">
@@ -9,24 +9,24 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220617 01:15:37.767" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220617 01:15:37.767" endtime="20220617 01:15:38.854"/>
+<msg timestamp="20220617 01:20:04.239" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220617 01:20:04.239" endtime="20220617 01:20:05.320"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220617 01:15:38.854" endtime="20220617 01:15:38.984"/>
+<status status="PASS" starttime="20220617 01:20:05.321" endtime="20220617 01:20:05.450"/>
 </kw>
-<status status="PASS" starttime="20220617 01:15:37.766" endtime="20220617 01:15:38.984"/>
+<status status="PASS" starttime="20220617 01:20:04.239" endtime="20220617 01:20:05.450"/>
 </kw>
 <kw name="Open Website" library="Common">
 <arg>${SITE_URL}${RUN_LANG}</arg>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${SITE_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220617 01:15:38.985" level="INFO">Opening url 'https://kariyer.baykartech.com/tr'</msg>
-<status status="PASS" starttime="20220617 01:15:38.985" endtime="20220617 01:15:43.539"/>
+<msg timestamp="20220617 01:20:05.451" level="INFO">Opening url 'https://kariyer.baykartech.com/tr'</msg>
+<status status="PASS" starttime="20220617 01:20:05.451" endtime="20220617 01:20:10.075"/>
 </kw>
-<status status="PASS" starttime="20220617 01:15:38.985" endtime="20220617 01:15:43.539"/>
+<status status="PASS" starttime="20220617 01:20:05.450" endtime="20220617 01:20:10.075"/>
 </kw>
 <kw name="Navbar Mouse Over Tests" library="Kariyer.Baykartech.App">
 <kw name="Mouse Over &quot;Kariyer&quot; Section" library="Navbar">
@@ -35,21 +35,21 @@
 <var>${sec_num}</var>
 <arg>1</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220617 01:15:43.540" level="INFO">${sec_num} = 1</msg>
-<status status="PASS" starttime="20220617 01:15:43.540" endtime="20220617 01:15:43.540"/>
+<msg timestamp="20220617 01:20:10.076" level="INFO">${sec_num} = 1</msg>
+<status status="PASS" starttime="20220617 01:20:10.076" endtime="20220617 01:20:10.076"/>
 </kw>
 <kw name="Mouse Over" library="SeleniumLibrary">
 <arg>${NAVBAR_SECTION}\[${sec_num}\]</arg>
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20220617 01:15:43.541" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="navbar-menu"]/ul/li[1]'.</msg>
-<status status="PASS" starttime="20220617 01:15:43.541" endtime="20220617 01:15:43.828"/>
+<msg timestamp="20220617 01:20:10.077" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="navbar-menu"]/ul/li[1]'.</msg>
+<status status="PASS" starttime="20220617 01:20:10.077" endtime="20220617 01:20:10.362"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${NAVBAR_SECTION}\[${sec_num}\]${FIRST_DROPDOWN_ELEMENT}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220617 01:15:43.828" endtime="20220617 01:15:44.297"/>
+<status status="PASS" starttime="20220617 01:20:10.362" endtime="20220617 01:20:10.825"/>
 </kw>
-<status status="PASS" starttime="20220617 01:15:43.540" endtime="20220617 01:15:44.297"/>
+<status status="PASS" starttime="20220617 01:20:10.076" endtime="20220617 01:20:10.825"/>
 </kw>
 <kw name="Mouse Over &quot;Staj&quot; Section" library="Navbar">
 <doc>[3] is a third section in navbar</doc>
@@ -57,23 +57,23 @@
 <var>${sec_num}</var>
 <arg>3</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220617 01:15:44.298" level="INFO">${sec_num} = 3</msg>
-<status status="PASS" starttime="20220617 01:15:44.298" endtime="20220617 01:15:44.298"/>
+<msg timestamp="20220617 01:20:10.825" level="INFO">${sec_num} = 3</msg>
+<status status="PASS" starttime="20220617 01:20:10.825" endtime="20220617 01:20:10.826"/>
 </kw>
 <kw name="Mouse Over" library="SeleniumLibrary">
 <arg>${NAVBAR_SECTION}\[${sec_num}\]</arg>
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20220617 01:15:44.298" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="navbar-menu"]/ul/li[3]'.</msg>
-<status status="PASS" starttime="20220617 01:15:44.298" endtime="20220617 01:15:44.586"/>
+<msg timestamp="20220617 01:20:10.826" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="navbar-menu"]/ul/li[3]'.</msg>
+<status status="PASS" starttime="20220617 01:20:10.826" endtime="20220617 01:20:11.108"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${NAVBAR_SECTION}\[${sec_num}\]${FIRST_DROPDOWN_ELEMENT}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220617 01:15:44.586" endtime="20220617 01:15:44.604"/>
+<status status="PASS" starttime="20220617 01:20:11.108" endtime="20220617 01:20:11.125"/>
 </kw>
-<status status="PASS" starttime="20220617 01:15:44.298" endtime="20220617 01:15:44.604"/>
+<status status="PASS" starttime="20220617 01:20:10.825" endtime="20220617 01:20:11.126"/>
 </kw>
-<status status="PASS" starttime="20220617 01:15:43.540" endtime="20220617 01:15:44.604"/>
+<status status="PASS" starttime="20220617 01:20:10.076" endtime="20220617 01:20:11.126"/>
 </kw>
 <kw name="Click non dropdown sections" library="Kariyer.Baykartech.App">
 <arg>${RUN_LANG}</arg>
@@ -83,31 +83,31 @@
 <var>${sec_num}</var>
 <arg>2</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220617 01:15:44.606" level="INFO">${sec_num} = 2</msg>
-<status status="PASS" starttime="20220617 01:15:44.606" endtime="20220617 01:15:44.606"/>
+<msg timestamp="20220617 01:20:11.127" level="INFO">${sec_num} = 2</msg>
+<status status="PASS" starttime="20220617 01:20:11.127" endtime="20220617 01:20:11.127"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${NAVBAR_SECTION}\[${sec_num}\]/a</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220617 01:15:44.606" level="INFO">Clicking link 'xpath=//*[@id="navbar-menu"]/ul/li[2]/a'.</msg>
-<status status="PASS" starttime="20220617 01:15:44.606" endtime="20220617 01:15:44.651"/>
+<msg timestamp="20220617 01:20:11.127" level="INFO">Clicking link 'xpath=//*[@id="navbar-menu"]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20220617 01:20:11.127" endtime="20220617 01:20:11.169"/>
 </kw>
-<status status="PASS" starttime="20220617 01:15:44.605" endtime="20220617 01:15:44.651"/>
+<status status="PASS" starttime="20220617 01:20:11.126" endtime="20220617 01:20:11.169"/>
 </kw>
 <kw name="Verify Section is Visible" library="Homepage">
 <arg>${OPEN_POZ_SECTION}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${SECTION_ELEMENT}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220617 01:15:44.651" endtime="20220617 01:15:44.675"/>
+<status status="PASS" starttime="20220617 01:20:11.170" endtime="20220617 01:20:11.185"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${SECTION_ELEMENT}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220617 01:15:44.687" level="INFO">Element 'css=div[id='services']' is displayed.</msg>
-<status status="PASS" starttime="20220617 01:15:44.675" endtime="20220617 01:15:44.688"/>
+<msg timestamp="20220617 01:20:11.198" level="INFO">Element 'css=div[id='services']' is displayed.</msg>
+<status status="PASS" starttime="20220617 01:20:11.185" endtime="20220617 01:20:11.198"/>
 </kw>
-<status status="PASS" starttime="20220617 01:15:44.651" endtime="20220617 01:15:44.688"/>
+<status status="PASS" starttime="20220617 01:20:11.169" endtime="20220617 01:20:11.198"/>
 </kw>
 <kw name="Click &quot;Baykarda Yaşam&quot; Section" library="Navbar">
 <doc>[4] is a fourth section in navbar</doc>
@@ -115,31 +115,31 @@
 <var>${sec_num}</var>
 <arg>4</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220617 01:15:44.688" level="INFO">${sec_num} = 4</msg>
-<status status="PASS" starttime="20220617 01:15:44.688" endtime="20220617 01:15:44.688"/>
+<msg timestamp="20220617 01:20:11.199" level="INFO">${sec_num} = 4</msg>
+<status status="PASS" starttime="20220617 01:20:11.199" endtime="20220617 01:20:11.199"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${NAVBAR_SECTION}\[${sec_num}\]/a</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220617 01:15:44.689" level="INFO">Clicking link 'xpath=//*[@id="navbar-menu"]/ul/li[4]/a'.</msg>
-<status status="PASS" starttime="20220617 01:15:44.688" endtime="20220617 01:15:44.727"/>
+<msg timestamp="20220617 01:20:11.199" level="INFO">Clicking link 'xpath=//*[@id="navbar-menu"]/ul/li[4]/a'.</msg>
+<status status="PASS" starttime="20220617 01:20:11.199" endtime="20220617 01:20:11.243"/>
 </kw>
-<status status="PASS" starttime="20220617 01:15:44.688" endtime="20220617 01:15:44.727"/>
+<status status="PASS" starttime="20220617 01:20:11.198" endtime="20220617 01:20:11.243"/>
 </kw>
 <kw name="Verify Section is Visible" library="Homepage">
 <arg>${BAYKAR_LIFE_SECTION}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${SECTION_ELEMENT}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220617 01:15:44.728" endtime="20220617 01:15:44.747"/>
+<status status="PASS" starttime="20220617 01:20:11.243" endtime="20220617 01:20:11.261"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${SECTION_ELEMENT}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220617 01:15:44.761" level="INFO">Element 'css=div[id='portfolio']' is displayed.</msg>
-<status status="PASS" starttime="20220617 01:15:44.747" endtime="20220617 01:15:44.761"/>
+<msg timestamp="20220617 01:20:11.274" level="INFO">Element 'css=div[id='portfolio']' is displayed.</msg>
+<status status="PASS" starttime="20220617 01:20:11.261" endtime="20220617 01:20:11.274"/>
 </kw>
-<status status="PASS" starttime="20220617 01:15:44.727" endtime="20220617 01:15:44.761"/>
+<status status="PASS" starttime="20220617 01:20:11.243" endtime="20220617 01:20:11.274"/>
 </kw>
 <kw name="Click &quot;S.S.S&quot; Section" library="Navbar">
 <doc>[5] is a fifth section in navbar</doc>
@@ -147,31 +147,31 @@
 <var>${sec_num}</var>
 <arg>5</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220617 01:15:44.762" level="INFO">${sec_num} = 5</msg>
-<status status="PASS" starttime="20220617 01:15:44.761" endtime="20220617 01:15:44.762"/>
+<msg timestamp="20220617 01:20:11.275" level="INFO">${sec_num} = 5</msg>
+<status status="PASS" starttime="20220617 01:20:11.274" endtime="20220617 01:20:11.275"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${NAVBAR_SECTION}\[${sec_num}\]/a</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220617 01:15:44.762" level="INFO">Clicking link 'xpath=//*[@id="navbar-menu"]/ul/li[5]/a'.</msg>
-<status status="PASS" starttime="20220617 01:15:44.762" endtime="20220617 01:15:44.804"/>
+<msg timestamp="20220617 01:20:11.275" level="INFO">Clicking link 'xpath=//*[@id="navbar-menu"]/ul/li[5]/a'.</msg>
+<status status="PASS" starttime="20220617 01:20:11.275" endtime="20220617 01:20:11.317"/>
 </kw>
-<status status="PASS" starttime="20220617 01:15:44.761" endtime="20220617 01:15:44.804"/>
+<status status="PASS" starttime="20220617 01:20:11.274" endtime="20220617 01:20:11.317"/>
 </kw>
 <kw name="Verify Section is Visible" library="Homepage">
 <arg>${SSS_SECTION}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${SECTION_ELEMENT}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220617 01:15:44.804" endtime="20220617 01:15:44.821"/>
+<status status="PASS" starttime="20220617 01:20:11.317" endtime="20220617 01:20:11.334"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${SECTION_ELEMENT}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220617 01:15:44.832" level="INFO">Element 'css=div[id='sss']' is displayed.</msg>
-<status status="PASS" starttime="20220617 01:15:44.821" endtime="20220617 01:15:44.832"/>
+<msg timestamp="20220617 01:20:11.347" level="INFO">Element 'css=div[id='sss']' is displayed.</msg>
+<status status="PASS" starttime="20220617 01:20:11.334" endtime="20220617 01:20:11.347"/>
 </kw>
-<status status="PASS" starttime="20220617 01:15:44.804" endtime="20220617 01:15:44.833"/>
+<status status="PASS" starttime="20220617 01:20:11.317" endtime="20220617 01:20:11.347"/>
 </kw>
 <kw name="Click &quot;BAYKAR&quot; Section" library="Navbar">
 <doc>[6] is a sixth section in navbar</doc>
@@ -179,62 +179,62 @@
 <var>${sec_num}</var>
 <arg>6</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220617 01:15:44.833" level="INFO">${sec_num} = 6</msg>
-<status status="PASS" starttime="20220617 01:15:44.833" endtime="20220617 01:15:44.833"/>
+<msg timestamp="20220617 01:20:11.347" level="INFO">${sec_num} = 6</msg>
+<status status="PASS" starttime="20220617 01:20:11.347" endtime="20220617 01:20:11.347"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${NAVBAR_SECTION}\[${sec_num}\]/a</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220617 01:15:44.833" level="INFO">Clicking link 'xpath=//*[@id="navbar-menu"]/ul/li[6]/a'.</msg>
-<status status="PASS" starttime="20220617 01:15:44.833" endtime="20220617 01:15:44.893"/>
+<msg timestamp="20220617 01:20:11.348" level="INFO">Clicking link 'xpath=//*[@id="navbar-menu"]/ul/li[6]/a'.</msg>
+<status status="PASS" starttime="20220617 01:20:11.347" endtime="20220617 01:20:11.411"/>
 </kw>
 <kw name="Get Window Handles" library="SeleniumLibrary">
 <var>${handle}</var>
 <doc>Returns all child window handles of the selected browser as a list.</doc>
-<msg timestamp="20220617 01:15:44.896" level="INFO">${handle} = ['CDwindow-58B5199E53A2803659C1823AAF4482AC', 'CDwindow-8B8518E466E24504CA7EB6B0E4C021B3']</msg>
-<status status="PASS" starttime="20220617 01:15:44.893" endtime="20220617 01:15:44.896"/>
+<msg timestamp="20220617 01:20:11.414" level="INFO">${handle} = ['CDwindow-895DF3522F194AFF3CAA04D29F00EA6B', 'CDwindow-76C900A56E2A9BC6A4FEBA9D64B8BB14']</msg>
+<status status="PASS" starttime="20220617 01:20:11.411" endtime="20220617 01:20:11.414"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>${handle}[1]</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20220617 01:15:44.896" endtime="20220617 01:15:45.057"/>
+<status status="PASS" starttime="20220617 01:20:11.414" endtime="20220617 01:20:11.573"/>
 </kw>
-<status status="PASS" starttime="20220617 01:15:44.833" endtime="20220617 01:15:45.057"/>
+<status status="PASS" starttime="20220617 01:20:11.347" endtime="20220617 01:20:11.574"/>
 </kw>
 <kw name="Verify &quot;baykartech.com&quot; opens" library="End-to-End">
 <kw name="Get Window Handles" library="SeleniumLibrary">
 <var>${handle}</var>
 <doc>Returns all child window handles of the selected browser as a list.</doc>
-<msg timestamp="20220617 01:15:45.061" level="INFO">${handle} = ['CDwindow-58B5199E53A2803659C1823AAF4482AC', 'CDwindow-8B8518E466E24504CA7EB6B0E4C021B3']</msg>
-<status status="PASS" starttime="20220617 01:15:45.058" endtime="20220617 01:15:45.061"/>
+<msg timestamp="20220617 01:20:11.576" level="INFO">${handle} = ['CDwindow-895DF3522F194AFF3CAA04D29F00EA6B', 'CDwindow-76C900A56E2A9BC6A4FEBA9D64B8BB14']</msg>
+<status status="PASS" starttime="20220617 01:20:11.574" endtime="20220617 01:20:11.576"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${BAYKAR_MAIN_LOGO}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220617 01:15:45.061" endtime="20220617 01:15:51.403"/>
+<status status="PASS" starttime="20220617 01:20:11.576" endtime="20220617 01:20:16.598"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${BAYKAR_MAIN_LOGO}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220617 01:15:51.418" level="INFO">Element 'xpath=//img[@alt='https://cdn.baykartech.com/media/images/contents/logo.png']' is displayed.</msg>
-<status status="PASS" starttime="20220617 01:15:51.403" endtime="20220617 01:15:51.418"/>
+<msg timestamp="20220617 01:20:16.617" level="INFO">Element 'xpath=//img[@alt='https://cdn.baykartech.com/media/images/contents/logo.png']' is displayed.</msg>
+<status status="PASS" starttime="20220617 01:20:16.599" endtime="20220617 01:20:16.618"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>${handle}[0]</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20220617 01:15:51.419" endtime="20220617 01:15:51.442"/>
+<status status="PASS" starttime="20220617 01:20:16.618" endtime="20220617 01:20:16.637"/>
 </kw>
-<status status="PASS" starttime="20220617 01:15:45.058" endtime="20220617 01:15:51.442"/>
+<status status="PASS" starttime="20220617 01:20:11.574" endtime="20220617 01:20:16.637"/>
 </kw>
 <kw name="Change Language" library="Navbar">
 <doc>Changes current language</doc>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${NAVBAR_LANG_BUTTON}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220617 01:15:51.444" level="INFO">Clicking link 'xpath=//li[@class='baykarLi']//a'.</msg>
-<status status="PASS" starttime="20220617 01:15:51.443" endtime="20220617 01:15:52.386"/>
+<msg timestamp="20220617 01:20:16.638" level="INFO">Clicking link 'xpath=//li[@class='baykarLi']//a'.</msg>
+<status status="PASS" starttime="20220617 01:20:16.637" endtime="20220617 01:20:17.498"/>
 </kw>
-<status status="PASS" starttime="20220617 01:15:51.442" endtime="20220617 01:15:52.387"/>
+<status status="PASS" starttime="20220617 01:20:16.637" endtime="20220617 01:20:17.498"/>
 </kw>
 <kw name="Verify Page Loaded" library="Common">
 <arg>en</arg>
@@ -242,19 +242,19 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${BAYKAR_LOGO_${LANG}}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220617 01:15:52.387" endtime="20220617 01:15:52.418"/>
+<status status="PASS" starttime="20220617 01:20:17.499" endtime="20220617 01:20:17.517"/>
 </kw>
-<status status="PASS" starttime="20220617 01:15:52.387" endtime="20220617 01:15:52.419"/>
+<status status="PASS" starttime="20220617 01:20:17.498" endtime="20220617 01:20:17.517"/>
 </kw>
 <kw name="Change Language" library="Navbar">
 <doc>Changes current language</doc>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${NAVBAR_LANG_BUTTON}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220617 01:15:52.419" level="INFO">Clicking link 'xpath=//li[@class='baykarLi']//a'.</msg>
-<status status="PASS" starttime="20220617 01:15:52.419" endtime="20220617 01:15:53.729"/>
+<msg timestamp="20220617 01:20:17.518" level="INFO">Clicking link 'xpath=//li[@class='baykarLi']//a'.</msg>
+<status status="PASS" starttime="20220617 01:20:17.518" endtime="20220617 01:20:18.680"/>
 </kw>
-<status status="PASS" starttime="20220617 01:15:52.419" endtime="20220617 01:15:53.729"/>
+<status status="PASS" starttime="20220617 01:20:17.517" endtime="20220617 01:20:18.680"/>
 </kw>
 <kw name="Verify Page Loaded" library="Common">
 <arg>tr</arg>
@@ -262,9 +262,9 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${BAYKAR_LOGO_${LANG}}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220617 01:15:53.730" endtime="20220617 01:15:53.757"/>
+<status status="PASS" starttime="20220617 01:20:18.681" endtime="20220617 01:20:18.699"/>
 </kw>
-<status status="PASS" starttime="20220617 01:15:53.729" endtime="20220617 01:15:53.757"/>
+<status status="PASS" starttime="20220617 01:20:18.680" endtime="20220617 01:20:18.699"/>
 </kw>
 <kw name="Click &quot;Dashboard&quot; button" library="Navbar">
 <arg>${LANG}</arg>
@@ -273,40 +273,40 @@
 <var>${NAVBAR_DASHBOARD_BUTTON}</var>
 <arg>xpath=//a[contains(@href, '/${LANG}/dashboard')]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220617 01:15:53.758" level="INFO">${NAVBAR_DASHBOARD_BUTTON} = xpath=//a[contains(@href, '/tr/dashboard')]</msg>
-<status status="PASS" starttime="20220617 01:15:53.758" endtime="20220617 01:15:53.758"/>
+<msg timestamp="20220617 01:20:18.700" level="INFO">${NAVBAR_DASHBOARD_BUTTON} = xpath=//a[contains(@href, '/tr/dashboard')]</msg>
+<status status="PASS" starttime="20220617 01:20:18.700" endtime="20220617 01:20:18.700"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${NAVBAR_DASHBOARD_BUTTON}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220617 01:15:53.759" level="INFO">Clicking link 'xpath=//a[contains(@href, '/tr/dashboard')]'.</msg>
-<status status="PASS" starttime="20220617 01:15:53.758" endtime="20220617 01:15:55.705"/>
+<msg timestamp="20220617 01:20:18.700" level="INFO">Clicking link 'xpath=//a[contains(@href, '/tr/dashboard')]'.</msg>
+<status status="PASS" starttime="20220617 01:20:18.700" endtime="20220617 01:20:20.138"/>
 </kw>
-<status status="PASS" starttime="20220617 01:15:53.758" endtime="20220617 01:15:55.705"/>
+<status status="PASS" starttime="20220617 01:20:18.699" endtime="20220617 01:20:20.138"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220617 01:15:58.716" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20220617 01:15:55.705" endtime="20220617 01:15:58.716"/>
+<msg timestamp="20220617 01:20:23.142" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220617 01:20:20.138" endtime="20220617 01:20:23.142"/>
 </kw>
-<status status="PASS" starttime="20220617 01:15:44.605" endtime="20220617 01:15:58.716"/>
+<status status="PASS" starttime="20220617 01:20:11.126" endtime="20220617 01:20:23.142"/>
 </kw>
 <kw name="End Baykar Web Test" library="Common" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220617 01:15:58.717" endtime="20220617 01:16:00.881"/>
+<status status="PASS" starttime="20220617 01:20:23.143" endtime="20220617 01:20:25.290"/>
 </kw>
-<status status="PASS" starttime="20220617 01:15:58.717" endtime="20220617 01:16:00.882"/>
+<status status="PASS" starttime="20220617 01:20:23.143" endtime="20220617 01:20:25.290"/>
 </kw>
 <doc>All visitors should be able navigate navbar</doc>
 <tag>Navbar</tag>
 <tag>Smoke</tag>
-<status status="PASS" starttime="20220617 01:15:37.766" endtime="20220617 01:16:00.882"/>
+<status status="PASS" starttime="20220617 01:20:04.238" endtime="20220617 01:20:25.291"/>
 </test>
-<status status="PASS" starttime="20220617 01:15:37.562" endtime="20220617 01:16:00.883"/>
+<status status="PASS" starttime="20220617 01:20:04.060" endtime="20220617 01:20:25.292"/>
 </suite>
-<status status="PASS" starttime="20220617 01:15:37.543" endtime="20220617 01:16:00.885"/>
+<status status="PASS" starttime="20220617 01:20:04.042" endtime="20220617 01:20:25.293"/>
 </suite>
 <statistics>
 <total>
@@ -322,8 +322,8 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220617 01:15:37.759" level="WARN">Imported resource file 'C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\Resources\PO\Footer.robot' is empty.</msg>
-<msg timestamp="20220617 01:15:37.761" level="WARN">Imported resource file 'C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\Resources\PO\Kariyer.robot' is empty.</msg>
-<msg timestamp="20220617 01:15:37.762" level="WARN">Imported resource file 'C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\Resources\PO\Staj.robot' is empty.</msg>
+<msg timestamp="20220617 01:20:04.231" level="WARN">Imported resource file 'C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\Resources\PO\Footer.robot' is empty.</msg>
+<msg timestamp="20220617 01:20:04.234" level="WARN">Imported resource file 'C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\Resources\PO\Kariyer.robot' is empty.</msg>
+<msg timestamp="20220617 01:20:04.235" level="WARN">Imported resource file 'C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\Resources\PO\Staj.robot' is empty.</msg>
 </errors>
 </robot>
