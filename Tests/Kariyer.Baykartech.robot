@@ -8,7 +8,7 @@ Test Teardown    End Baykar Web Test
 *** Variables ***
 ${SITE_URL} =    https://kariyer.baykartech.com/
 ${BROWSER} =    chrome
-${RUN_LANG} =    tr
+${RUN_LANG} =    en
 
 *** Test Cases ***
 Visitor should be able enter site

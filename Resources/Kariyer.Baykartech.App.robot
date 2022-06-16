@@ -37,10 +37,10 @@ Click non dropdown sections
     End-to-End.Verify "baykartech.com" opens
 
     Navbar.Change Language
-    Common.Verify Page Loaded    en
+    Run Keyword If    "${LANG}" == "tr"   Common.Verify Page Loaded    en    ELSE    Common.Verify Page Loaded    tr
 
     Navbar.Change Language
-    Common.Verify Page Loaded    tr
+    Run Keyword If    "${LANG}" == "tr"   Common.Verify Page Loaded    tr    ELSE    Common.Verify Page Loaded    en
 
     Navbar.Click "Dashboard" button    ${LANG}
     sleep  3s
