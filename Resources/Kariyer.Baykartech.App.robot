@@ -33,5 +33,8 @@ Click non dropdown sections
     Navbar.Click "BAYKAR" Section
     End-to-End.Verify "baykartech.com" opens
 
+    Navbar.Change Language
+    Sleep    2s
+
 
 

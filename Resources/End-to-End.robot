@@ -6,6 +6,8 @@ ${BAYKAR_MAIN_LOGO} =    xpath=//img[@alt='https://cdn.baykartech.com/media/imag
 
 *** Keywords ***
 Verify "baykartech.com" opens
+    ${handle} =    Get Window Handles
+
     Wait Until Element Is Visible    ${BAYKAR_MAIN_LOGO}
     Element Should Be Visible    ${BAYKAR_MAIN_LOGO}
-    Close Window
+    Switch Window    ${handle}[0]

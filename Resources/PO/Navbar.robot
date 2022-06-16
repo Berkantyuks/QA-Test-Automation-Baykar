@@ -6,6 +6,10 @@ Resource    ../GlobalVariables.robot
 *** Variables ***
 ${NAVBAR_SECTION} =    xpath=//*[@id="navbar-menu"]/ul/li
 ${FIRST_DROPDOWN_ELEMENT} =   /ul/li[1]/a
+
+${NAVBAR_LANG_BUTTON} =    xpath=//li[@class='baykarLi']//a
+${NAVBAR_DASHBOARD_BUTTON} =    xpath=//a[contains(.,'Dashboard')]
+
 *** Keywords ***
 Mouse Over "Kariyer" Section
     [Documentation]    [1] is a first section in navbar
@@ -40,9 +44,12 @@ Click "S.S.S" Section
     Click Link    ${NAVBAR_SECTION}\[${sec_num}\]/a
 
 Click "BAYKAR" Section
-
     [Documentation]    [6] is a second section in navbar
 
     ${sec_num} =  Set Variable   6
     Click Link    ${NAVBAR_SECTION}\[${sec_num}\]/a
     Switch Window    title:${BAYKAR_MAIN_TITLE}
+
+Change Language
+    [Documentation]    Changes current language
+    Click Link    ${NAVBAR_LANG_BUTTON}
