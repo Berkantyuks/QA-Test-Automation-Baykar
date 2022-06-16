@@ -31,3 +31,9 @@ Click "Baykarda Yaşam" Section
 
     ${sec_num} =  Set Variable   4
     Click Link    ${NAVBAR_SECTION}\[${sec_num}\]/a
+
+Click "S.S.S" Section
+    [Documentation]    [5] is a second section in navbar
+
+    ${sec_num} =  Set Variable   5
+    Click Link    ${NAVBAR_SECTION}\[${sec_num}\]/a
