@@ -21,4 +21,5 @@ Visitor should be able navigate navbar
     [Tags]    Smoke    Navbar
     Open Website    ${SITE_URL_TR}
     Kariyer.Baykartech.App.Navbar Mouse Over Tests
+    Kariyer.Baykartech.App.Click non dropdown sections
     Sleep    2s
