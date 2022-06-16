@@ -22,4 +22,4 @@ Visitor should be able navigate navbar
     [Tags]    Smoke    Navbar
     Open Website    ${SITE_URL}${RUN_LANG}
     Kariyer.Baykartech.App.Navbar Mouse Over Tests
-    Kariyer.Baykartech.App.Click non dropdown sections
+    Kariyer.Baykartech.App.Click non dropdown sections    ${RUN_LANG}

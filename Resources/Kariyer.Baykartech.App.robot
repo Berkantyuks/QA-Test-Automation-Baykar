@@ -23,6 +23,7 @@ Navbar Mouse Over Tests
     Navbar.Mouse Over "Staj" Section
 
 Click non dropdown sections
+    [Arguments]    ${LANG}
     Navbar.Click "Açık Pozisyonlar" Section
     Homepage.Verify Section is Visible    ${OPEN_POZ_SECTION}
 
@@ -40,6 +41,10 @@ Click non dropdown sections
 
     Navbar.Change Language
     Common.Verify Page Loaded    tr
+
+    sleep  2s
+    Navbar.Click "Dashboard" button    ${LANG}
+    sleep  3s
 
 
 
