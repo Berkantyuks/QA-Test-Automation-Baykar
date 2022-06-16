@@ -14,3 +14,6 @@ Start Baykar Web Test
 Open Website
     [Arguments]    ${SITE_URL}
     Go To      ${SITE_URL}
+
+End Baykar Web Test
+    Close Browser
