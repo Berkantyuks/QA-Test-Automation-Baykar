@@ -12,7 +12,6 @@ Resource    ./PO/Dashboard/Sign-Up.robot
 Resource    ./PO/Dashboard/Forget-Password.robot
 Resource    ./End-to-End.robot
 
-
 *** Variables ***
 ${OPEN_POZ_SECTION} =    css=div[id='services']
 ${BAYKAR_LIFE_SECTION} =    css=div[id='portfolio']
@@ -20,8 +19,7 @@ ${SSS_SECTION} =    css=div[id='sss']
 
 ${MAIN_SLIDER_RANGE} =    22
 ${OPEN_POZ_SLIDER_RANGE} =    4
-
-
+${LIFE_IN_BAYKAR_SLIDER_RANGE} =    7
 
 *** Keywords ***
 Navbar Mouse Over Tests
@@ -68,6 +66,10 @@ Navigate "Main" Slider
 Navigate "Open Positions" Slider
     Homepage.Navigate open poz slider in loop    ${OPEN_POZ_SLIDER_RANGE}    BACKWARD
     Homepage.Navigate open poz slider in loop    ${OPEN_POZ_SLIDER_RANGE}    FORWARD
+
+Navigate "Life in Baykar" Slider
+    Homepage.Navigate life in baykar slider in loop    ${LIFE_IN_BAYKAR_SLIDER_RANGE}    BACKWARD
+    Homepage.Navigate life in baykar slider in loop    ${LIFE_IN_BAYKAR_SLIDER_RANGE}    FORWARD
 
 
 

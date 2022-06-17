@@ -34,6 +34,7 @@ Visitor should be able navigate all sliders
     Common.Verify Page Loaded    ${RUN_LANG}
     Kariyer.Baykartech.App.Navigate "Main" Slider
     Kariyer.Baykartech.App.Navigate "Open Positions" Slider
+    Kariyer.Baykartech.App.Navigate "Life in Baykar" Slider
 
 Visitor should be see "Login", "Forget Password", "Create Account" pages
     [Documentation]    All visitors should be see dashboard input pages as not signed user
