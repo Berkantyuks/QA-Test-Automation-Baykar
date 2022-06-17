@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    This test file includes all tests for kariyer.baykartech.com, if you wanna change Browser or Runtime Language go to variables section in this file.
+Documentation    This test file includes all tests for kariyer.baykartech.com, if you wanna change Browser or Runtime Language go to *Variables* section in this file.
 
 Resource    ../Resources/Common.robot
 Resource    ../Resources/Kariyer.Baykartech.App.robot
@@ -10,7 +10,7 @@ Test Teardown    End Baykar Web Test
 *** Variables ***
 ${SITE_URL} =    https://kariyer.baykartech.com/
 ${BROWSER} =    chrome    # add browser driver in env. path before first run
-${RUN_LANG} =    en       # tr or en [!] lowercase [!]
+${RUN_LANG} =    en       # "tr" or "en" [!] lowercase [!]
 
 *** Test Cases ***
 Visitor should be able enter site
@@ -36,7 +36,7 @@ Visitor should be able navigate all sliders
     Kariyer.Baykartech.App.Navigate "Open Positions" Slider
 
 Visitor should be see "Login", "Forget Password", "Create Account" pages
-    [Documentation]    All visitors should be see login page as not signed user
+    [Documentation]    All visitors should be see dashboard input pages as not signed user
     [Tags]    Smoke    Login    Sign Up    Forget Password
     Open Website    ${SITE_URL}${RUN_LANG}
     Common.Verify Page Loaded    ${RUN_LANG}
