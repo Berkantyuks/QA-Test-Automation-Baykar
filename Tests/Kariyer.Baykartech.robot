@@ -44,3 +44,9 @@ Visitor should be see "Login", "Forget Password", "Create Account" pages
     Kariyer.Baykartech.App.Click "Login" button as not signed user    ${RUN_LANG}
     Kariyer.Baykartech.App.Click "Forget Password" link as not signed user
     Kariyer.Baykartech.App.Click "Create Account" link as not signed user
+
+Visitor should be able click and see all "Footer" elements
+    [Documentation]    All visitors should be able navigate footer links
+    [Tags]    Smoke    Footer
+    Open Website    ${SITE_URL}${RUN_LANG}
+    Common.Verify Page Loaded    ${RUN_LANG}
