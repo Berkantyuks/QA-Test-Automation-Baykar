@@ -71,6 +71,10 @@ Navigate "Life in Baykar" Slider
     Homepage.Navigate life in baykar slider in loop    ${LIFE_IN_BAYKAR_SLIDER_RANGE}    BACKWARD
     Homepage.Navigate life in baykar slider in loop    ${LIFE_IN_BAYKAR_SLIDER_RANGE}    FORWARD
 
+Navigate "Footer" Elements
+    Footer.Scroll to end of the page
+    Footer.Navigate footer elements in loop
+
 
 
 
