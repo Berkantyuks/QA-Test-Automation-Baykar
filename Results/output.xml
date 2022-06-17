@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220618 00:14:11.174" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220618 00:21:35.320" rpa="false" schemaversion="3">
 <suite id="s1" name="Tests" source="C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\tests">
 <suite id="s1-s1" name="Kariyer.Baykartech" source="C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\tests\Kariyer.Baykartech.robot">
 <test id="s1-s1-t1" name="Visitor should be able click and see all &quot;Footer&quot; elements" line="48">
@@ -9,24 +9,24 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220618 00:14:11.415" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220618 00:14:11.415" endtime="20220618 00:14:12.503"/>
+<msg timestamp="20220618 00:21:35.532" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220618 00:21:35.531" endtime="20220618 00:21:36.588"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220618 00:14:12.503" endtime="20220618 00:14:12.622"/>
+<status status="PASS" starttime="20220618 00:21:36.588" endtime="20220618 00:21:36.701"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:11.415" endtime="20220618 00:14:12.622"/>
+<status status="PASS" starttime="20220618 00:21:35.531" endtime="20220618 00:21:36.701"/>
 </kw>
 <kw name="Open Website" library="Common">
 <arg>${SITE_URL}${RUN_LANG}</arg>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${SITE_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220618 00:14:12.623" level="INFO">Opening url 'https://kariyer.baykartech.com/en'</msg>
-<status status="PASS" starttime="20220618 00:14:12.623" endtime="20220618 00:14:17.276"/>
+<msg timestamp="20220618 00:21:36.702" level="INFO">Opening url 'https://kariyer.baykartech.com/en'</msg>
+<status status="PASS" starttime="20220618 00:21:36.702" endtime="20220618 00:21:41.646"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:12.622" endtime="20220618 00:14:17.276"/>
+<status status="PASS" starttime="20220618 00:21:36.701" endtime="20220618 00:21:41.646"/>
 </kw>
 <kw name="Verify Page Loaded" library="Common">
 <arg>${RUN_LANG}</arg>
@@ -34,9 +34,9 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${BAYKAR_LOGO_${LANG}}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220618 00:14:17.277" endtime="20220618 00:14:17.298"/>
+<status status="PASS" starttime="20220618 00:21:41.647" endtime="20220618 00:21:41.667"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:17.277" endtime="20220618 00:14:17.298"/>
+<status status="PASS" starttime="20220618 00:21:41.647" endtime="20220618 00:21:41.668"/>
 </kw>
 <kw name="Navigate &quot;Footer&quot; Elements" library="Kariyer.Baykartech.App">
 <arg>${RUN_LANG}</arg>
@@ -44,12 +44,13 @@
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${PAGE_END}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220618 00:14:17.300" endtime="20220618 00:14:17.574"/>
+<status status="PASS" starttime="20220618 00:21:41.669" endtime="20220618 00:21:41.948"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:17.300" endtime="20220618 00:14:17.575"/>
+<status status="PASS" starttime="20220618 00:21:41.669" endtime="20220618 00:21:41.948"/>
 </kw>
 <kw name="Navigate footer elements in loop" library="Footer">
 <arg>${LANG}</arg>
+<doc>Clicks all footer links by created list</doc>
 <for flavor="IN ZIP">
 <var>${LINK_TR}</var>
 <var>${LINK_EN}</var>
@@ -70,14 +71,14 @@
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${LINK_EN}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220618 00:14:17.576" level="INFO">Clicking link 'xpath=//footer//a[.="About Us"]'.</msg>
-<status status="PASS" starttime="20220618 00:14:17.576" endtime="20220618 00:14:18.932"/>
+<msg timestamp="20220618 00:21:41.949" level="INFO">Clicking link 'xpath=//footer//a[.="About Us"]'.</msg>
+<status status="PASS" starttime="20220618 00:21:41.949" endtime="20220618 00:21:43.308"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:17.575" endtime="20220618 00:14:18.932"/>
+<status status="PASS" starttime="20220618 00:21:41.949" endtime="20220618 00:21:43.308"/>
 </kw>
 <kw name="Go Back" library="SeleniumLibrary">
 <doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" starttime="20220618 00:14:18.932" endtime="20220618 00:14:19.491"/>
+<status status="PASS" starttime="20220618 00:21:43.308" endtime="20220618 00:21:44.042"/>
 </kw>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>Scroll to end of the page</arg>
@@ -86,13 +87,13 @@
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${PAGE_END}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220618 00:14:19.492" endtime="20220618 00:14:19.783"/>
+<status status="PASS" starttime="20220618 00:21:44.043" endtime="20220618 00:21:44.377"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:19.492" endtime="20220618 00:14:19.783"/>
+<status status="PASS" starttime="20220618 00:21:44.043" endtime="20220618 00:21:44.377"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:19.491" endtime="20220618 00:14:19.783"/>
+<status status="PASS" starttime="20220618 00:21:44.043" endtime="20220618 00:21:44.377"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:17.575" endtime="20220618 00:14:19.783"/>
+<status status="PASS" starttime="20220618 00:21:41.949" endtime="20220618 00:21:44.377"/>
 </iter>
 <iter>
 <var name="${LINK_TR}">xpath=//footer//a[.="Yönetim"]</var>
@@ -109,14 +110,14 @@
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${LINK_EN}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220618 00:14:19.784" level="INFO">Clicking link 'xpath=//footer//a[.="Management"]'.</msg>
-<status status="PASS" starttime="20220618 00:14:19.783" endtime="20220618 00:14:20.732"/>
+<msg timestamp="20220618 00:21:44.378" level="INFO">Clicking link 'xpath=//footer//a[.="Management"]'.</msg>
+<status status="PASS" starttime="20220618 00:21:44.378" endtime="20220618 00:21:45.388"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:19.783" endtime="20220618 00:14:20.733"/>
+<status status="PASS" starttime="20220618 00:21:44.377" endtime="20220618 00:21:45.388"/>
 </kw>
 <kw name="Go Back" library="SeleniumLibrary">
 <doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" starttime="20220618 00:14:20.733" endtime="20220618 00:14:21.285"/>
+<status status="PASS" starttime="20220618 00:21:45.388" endtime="20220618 00:21:45.801"/>
 </kw>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>Scroll to end of the page</arg>
@@ -125,13 +126,13 @@
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${PAGE_END}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220618 00:14:21.286" endtime="20220618 00:14:21.566"/>
+<status status="PASS" starttime="20220618 00:21:45.802" endtime="20220618 00:21:46.089"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:21.286" endtime="20220618 00:14:21.567"/>
+<status status="PASS" starttime="20220618 00:21:45.801" endtime="20220618 00:21:46.090"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:21.285" endtime="20220618 00:14:21.567"/>
+<status status="PASS" starttime="20220618 00:21:45.801" endtime="20220618 00:21:46.090"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:19.783" endtime="20220618 00:14:21.567"/>
+<status status="PASS" starttime="20220618 00:21:44.377" endtime="20220618 00:21:46.090"/>
 </iter>
 <iter>
 <var name="${LINK_TR}">xpath=//footer//a[.="Tarihçe"]</var>
@@ -148,14 +149,14 @@
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${LINK_EN}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220618 00:14:21.567" level="INFO">Clicking link 'xpath=//footer//a[.="History"]'.</msg>
-<status status="PASS" starttime="20220618 00:14:21.567" endtime="20220618 00:14:22.560"/>
+<msg timestamp="20220618 00:21:46.091" level="INFO">Clicking link 'xpath=//footer//a[.="History"]'.</msg>
+<status status="PASS" starttime="20220618 00:21:46.091" endtime="20220618 00:21:47.139"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:21.567" endtime="20220618 00:14:22.560"/>
+<status status="PASS" starttime="20220618 00:21:46.090" endtime="20220618 00:21:47.139"/>
 </kw>
 <kw name="Go Back" library="SeleniumLibrary">
 <doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" starttime="20220618 00:14:22.560" endtime="20220618 00:14:22.920"/>
+<status status="PASS" starttime="20220618 00:21:47.139" endtime="20220618 00:21:47.559"/>
 </kw>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>Scroll to end of the page</arg>
@@ -164,13 +165,13 @@
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${PAGE_END}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220618 00:14:22.921" endtime="20220618 00:14:23.216"/>
+<status status="PASS" starttime="20220618 00:21:47.559" endtime="20220618 00:21:47.873"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:22.920" endtime="20220618 00:14:23.216"/>
+<status status="PASS" starttime="20220618 00:21:47.559" endtime="20220618 00:21:47.873"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:22.920" endtime="20220618 00:14:23.216"/>
+<status status="PASS" starttime="20220618 00:21:47.559" endtime="20220618 00:21:47.873"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:21.567" endtime="20220618 00:14:23.216"/>
+<status status="PASS" starttime="20220618 00:21:46.090" endtime="20220618 00:21:47.873"/>
 </iter>
 <iter>
 <var name="${LINK_TR}">xpath=//footer//a[.="Açık Pozisyonlar"]</var>
@@ -187,14 +188,14 @@
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${LINK_EN}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220618 00:14:23.217" level="INFO">Clicking link 'xpath=//footer//a[.="Open Positions"]'.</msg>
-<status status="PASS" starttime="20220618 00:14:23.216" endtime="20220618 00:14:25.712"/>
+<msg timestamp="20220618 00:21:47.874" level="INFO">Clicking link 'xpath=//footer//a[.="Open Positions"]'.</msg>
+<status status="PASS" starttime="20220618 00:21:47.874" endtime="20220618 00:21:50.579"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:23.216" endtime="20220618 00:14:25.712"/>
+<status status="PASS" starttime="20220618 00:21:47.873" endtime="20220618 00:21:50.580"/>
 </kw>
 <kw name="Go Back" library="SeleniumLibrary">
 <doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" starttime="20220618 00:14:25.712" endtime="20220618 00:14:26.076"/>
+<status status="PASS" starttime="20220618 00:21:50.580" endtime="20220618 00:21:50.977"/>
 </kw>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>Scroll to end of the page</arg>
@@ -203,13 +204,13 @@
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${PAGE_END}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220618 00:14:26.077" endtime="20220618 00:14:26.358"/>
+<status status="PASS" starttime="20220618 00:21:50.978" endtime="20220618 00:21:51.304"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:26.077" endtime="20220618 00:14:26.359"/>
+<status status="PASS" starttime="20220618 00:21:50.978" endtime="20220618 00:21:51.304"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:26.077" endtime="20220618 00:14:26.359"/>
+<status status="PASS" starttime="20220618 00:21:50.978" endtime="20220618 00:21:51.304"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:23.216" endtime="20220618 00:14:26.359"/>
+<status status="PASS" starttime="20220618 00:21:47.873" endtime="20220618 00:21:51.304"/>
 </iter>
 <iter>
 <var name="${LINK_TR}">xpath=//footer//a[.="İş"]</var>
@@ -226,14 +227,14 @@
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${LINK_EN}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220618 00:14:26.359" level="INFO">Clicking link 'xpath=//footer//a[.="Jobs"]'.</msg>
-<status status="PASS" starttime="20220618 00:14:26.359" endtime="20220618 00:14:27.316"/>
+<msg timestamp="20220618 00:21:51.304" level="INFO">Clicking link 'xpath=//footer//a[.="Jobs"]'.</msg>
+<status status="PASS" starttime="20220618 00:21:51.304" endtime="20220618 00:21:52.276"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:26.359" endtime="20220618 00:14:27.316"/>
+<status status="PASS" starttime="20220618 00:21:51.304" endtime="20220618 00:21:52.276"/>
 </kw>
 <kw name="Go Back" library="SeleniumLibrary">
 <doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" starttime="20220618 00:14:27.316" endtime="20220618 00:14:27.608"/>
+<status status="PASS" starttime="20220618 00:21:52.276" endtime="20220618 00:21:52.623"/>
 </kw>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>Scroll to end of the page</arg>
@@ -242,13 +243,13 @@
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${PAGE_END}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220618 00:14:27.609" endtime="20220618 00:14:27.891"/>
+<status status="PASS" starttime="20220618 00:21:52.624" endtime="20220618 00:21:52.947"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:27.608" endtime="20220618 00:14:27.891"/>
+<status status="PASS" starttime="20220618 00:21:52.623" endtime="20220618 00:21:52.947"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:27.608" endtime="20220618 00:14:27.891"/>
+<status status="PASS" starttime="20220618 00:21:52.623" endtime="20220618 00:21:52.947"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:26.359" endtime="20220618 00:14:27.891"/>
+<status status="PASS" starttime="20220618 00:21:51.304" endtime="20220618 00:21:52.947"/>
 </iter>
 <iter>
 <var name="${LINK_TR}">xpath=//footer//a[.="Staj"]</var>
@@ -265,14 +266,14 @@
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${LINK_EN}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220618 00:14:27.892" level="INFO">Clicking link 'xpath=//footer//a[.="İntern"]'.</msg>
-<status status="PASS" starttime="20220618 00:14:27.891" endtime="20220618 00:14:28.357"/>
+<msg timestamp="20220618 00:21:52.948" level="INFO">Clicking link 'xpath=//footer//a[.="İntern"]'.</msg>
+<status status="PASS" starttime="20220618 00:21:52.948" endtime="20220618 00:21:53.337"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:27.891" endtime="20220618 00:14:28.358"/>
+<status status="PASS" starttime="20220618 00:21:52.948" endtime="20220618 00:21:53.337"/>
 </kw>
 <kw name="Go Back" library="SeleniumLibrary">
 <doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" starttime="20220618 00:14:28.358" endtime="20220618 00:14:28.691"/>
+<status status="PASS" starttime="20220618 00:21:53.338" endtime="20220618 00:21:53.703"/>
 </kw>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>Scroll to end of the page</arg>
@@ -281,36 +282,114 @@
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${PAGE_END}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220618 00:14:28.692" endtime="20220618 00:14:28.980"/>
+<status status="PASS" starttime="20220618 00:21:53.704" endtime="20220618 00:21:54.005"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:28.691" endtime="20220618 00:14:28.980"/>
+<status status="PASS" starttime="20220618 00:21:53.703" endtime="20220618 00:21:54.005"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:28.691" endtime="20220618 00:14:28.980"/>
+<status status="PASS" starttime="20220618 00:21:53.703" endtime="20220618 00:21:54.005"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:27.891" endtime="20220618 00:14:28.980"/>
+<status status="PASS" starttime="20220618 00:21:52.948" endtime="20220618 00:21:54.005"/>
 </iter>
-<status status="PASS" starttime="20220618 00:14:17.575" endtime="20220618 00:14:28.980"/>
-</for>
-<status status="PASS" starttime="20220618 00:14:17.575" endtime="20220618 00:14:28.980"/>
+<iter>
+<var name="${LINK_TR}">xpath=//footer//a[.="İletişim"]</var>
+<var name="${LINK_EN}">xpath=//footer//a[.="Communication"]</var>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>"${LANG}" == "tr"</arg>
+<arg>Click Link</arg>
+<arg>${LINK_TR}</arg>
+<arg>ELSE IF</arg>
+<arg>"${LANG}" == "en"</arg>
+<arg>Click Link</arg>
+<arg>${LINK_EN}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${LINK_EN}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220618 00:21:54.006" level="INFO">Clicking link 'xpath=//footer//a[.="Communication"]'.</msg>
+<status status="PASS" starttime="20220618 00:21:54.006" endtime="20220618 00:21:55.031"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:17.299" endtime="20220618 00:14:28.980"/>
+<status status="PASS" starttime="20220618 00:21:54.006" endtime="20220618 00:21:55.032"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20220618 00:21:55.032" endtime="20220618 00:21:55.465"/>
+</kw>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>Scroll to end of the page</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Scroll to end of the page" library="Footer">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${PAGE_END}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220618 00:21:55.466" endtime="20220618 00:21:55.763"/>
+</kw>
+<status status="PASS" starttime="20220618 00:21:55.465" endtime="20220618 00:21:55.763"/>
+</kw>
+<status status="PASS" starttime="20220618 00:21:55.465" endtime="20220618 00:21:55.763"/>
+</kw>
+<status status="PASS" starttime="20220618 00:21:54.005" endtime="20220618 00:21:55.763"/>
+</iter>
+<iter>
+<var name="${LINK_TR}">xpath=//footer//a[.="KVKK"]</var>
+<var name="${LINK_EN}">xpath=//footer//a[.="KVKK"]</var>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>"${LANG}" == "tr"</arg>
+<arg>Click Link</arg>
+<arg>${LINK_TR}</arg>
+<arg>ELSE IF</arg>
+<arg>"${LANG}" == "en"</arg>
+<arg>Click Link</arg>
+<arg>${LINK_EN}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${LINK_EN}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220618 00:21:55.764" level="INFO">Clicking link 'xpath=//footer//a[.="KVKK"]'.</msg>
+<status status="PASS" starttime="20220618 00:21:55.764" endtime="20220618 00:21:56.544"/>
+</kw>
+<status status="PASS" starttime="20220618 00:21:55.763" endtime="20220618 00:21:56.544"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20220618 00:21:56.544" endtime="20220618 00:21:56.963"/>
+</kw>
+<kw name="Run Keyword" library="BuiltIn">
+<arg>Scroll to end of the page</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Scroll to end of the page" library="Footer">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${PAGE_END}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220618 00:21:56.964" endtime="20220618 00:21:57.336"/>
+</kw>
+<status status="PASS" starttime="20220618 00:21:56.963" endtime="20220618 00:21:57.336"/>
+</kw>
+<status status="PASS" starttime="20220618 00:21:56.963" endtime="20220618 00:21:57.336"/>
+</kw>
+<status status="PASS" starttime="20220618 00:21:55.763" endtime="20220618 00:21:57.336"/>
+</iter>
+<status status="PASS" starttime="20220618 00:21:41.948" endtime="20220618 00:21:57.336"/>
+</for>
+<status status="PASS" starttime="20220618 00:21:41.948" endtime="20220618 00:21:57.336"/>
+</kw>
+<status status="PASS" starttime="20220618 00:21:41.668" endtime="20220618 00:21:57.337"/>
 </kw>
 <kw name="End Baykar Web Test" library="Common" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220618 00:14:28.981" endtime="20220618 00:14:31.101"/>
+<status status="PASS" starttime="20220618 00:21:57.338" endtime="20220618 00:21:59.473"/>
 </kw>
-<status status="PASS" starttime="20220618 00:14:28.981" endtime="20220618 00:14:31.101"/>
+<status status="PASS" starttime="20220618 00:21:57.337" endtime="20220618 00:21:59.473"/>
 </kw>
 <doc>All visitors should be able navigate footer links</doc>
 <tag>Footer</tag>
 <tag>Smoke</tag>
-<status status="PASS" starttime="20220618 00:14:11.414" endtime="20220618 00:14:31.101"/>
+<status status="PASS" starttime="20220618 00:21:35.530" endtime="20220618 00:21:59.474"/>
 </test>
 <doc>This test file includes all tests for kariyer.baykartech.com, if you wanna change Browser or Runtime Language go to *Variables* section in this file.</doc>
-<status status="PASS" starttime="20220618 00:14:11.199" endtime="20220618 00:14:31.102"/>
+<status status="PASS" starttime="20220618 00:21:35.339" endtime="20220618 00:21:59.475"/>
 </suite>
-<status status="PASS" starttime="20220618 00:14:11.176" endtime="20220618 00:14:31.104"/>
+<status status="PASS" starttime="20220618 00:21:35.321" endtime="20220618 00:21:59.476"/>
 </suite>
 <statistics>
 <total>
@@ -326,7 +405,7 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220618 00:14:11.404" level="WARN">Imported resource file 'C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\Resources\PO\Kariyer.robot' is empty.</msg>
-<msg timestamp="20220618 00:14:11.405" level="WARN">Imported resource file 'C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\Resources\PO\Staj.robot' is empty.</msg>
+<msg timestamp="20220618 00:21:35.520" level="WARN">Imported resource file 'C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\Resources\PO\Kariyer.robot' is empty.</msg>
+<msg timestamp="20220618 00:21:35.521" level="WARN">Imported resource file 'C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\Resources\PO\Staj.robot' is empty.</msg>
 </errors>
 </robot>
