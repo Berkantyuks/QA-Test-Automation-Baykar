@@ -25,12 +25,13 @@ Visitor should be able navigate navbar
     Kariyer.Baykartech.App.Navbar Mouse Over Tests
     Kariyer.Baykartech.App.Click non dropdown sections    ${RUN_LANG}
 
-Visitor should be able navigate main slider
-    [Documentation]    All visitors should be able navigate main slider and see correct image/text
-    [Tags]    Smoke    Main Slider
+Visitor should be able navigate all sliders
+    [Documentation]    All visitors should be able navigate all sliders
+    [Tags]    Smoke    Main Slider    Open Poz Slider
     Open Website    ${SITE_URL}${RUN_LANG}
     Common.Verify Page Loaded    ${RUN_LANG}
-    Kariyer.Baykartech.App.Navigate Main Slider
+    Kariyer.Baykartech.App.Navigate "Main" Slider
+    Kariyer.Baykartech.App.Navigate "Open Positions" Slider
 
 Visitor should be see "Login", "Forget Password", "Create Account" pages
     [Documentation]    All visitors should be see login page as not signed user

@@ -28,14 +28,14 @@ Navigate main slider in loop
 
     END
 
-Navigate sub slider in loop
-    [Arguments]    ${SLIDER_RANGE}
+Navigate open poz slider in loop
+    [Arguments]    ${SLIDER_RANGE}    ${GEAR}
 
     Scroll Element Into View    ${OPEN_POZ_SLIDER_NEXT_BUTTON}
     FOR    ${i}    IN RANGE     ${SLIDER_RANGE}
 
-        Click Element    ${OPEN_POZ_SLIDER_NEXT_BUTTON}
-        Sleep    1s
+        Run Keyword If  "${GEAR}" == "FORWARD"    Click Element    ${OPEN_POZ_SLIDER_NEXT_BUTTON}    ELSE    Click Element    ${OPEN_POZ_SLIDER_PREV_BUTTON}
+        Sleep    0.5s
 
     END
 

@@ -18,7 +18,8 @@ ${OPEN_POZ_SECTION} =    css=div[id='services']
 ${BAYKAR_LIFE_SECTION} =    css=div[id='portfolio']
 ${SSS_SECTION} =    css=div[id='sss']
 
-${SLIDER_RANGE} =    22
+${MAIN_SLIDER_RANGE} =    22
+${OPEN_POZ_SLIDER_RANGE} =    4
 
 
 
@@ -61,9 +62,12 @@ Click "Create Account" link as not signed user
     Forget-Password.Click "Create Account" Link
     Sign-Up.Verify Page Loaded
 
-Navigate Main Slider
-    Homepage.Navigate main slider in loop    ${SLIDER_RANGE}
+Navigate "Main" Slider
+    Homepage.Navigate main slider in loop    ${MAIN_SLIDER_RANGE}
 
+Navigate "Open Positions" Slider
+    Homepage.Navigate open poz slider in loop    ${OPEN_POZ_SLIDER_RANGE}    BACKWARD
+    Homepage.Navigate open poz slider in loop    ${OPEN_POZ_SLIDER_RANGE}    FORWARD
 
 
 
