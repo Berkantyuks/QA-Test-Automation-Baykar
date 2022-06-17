@@ -47,6 +47,21 @@ Click non dropdown sections
     Run Keyword If    "${LANG}" == "tr"   Common.Verify Page Loaded    tr    ELSE    Common.Verify Page Loaded    en
 
 
+Click "Kariyer" Section Dropdowns and Check Page
+    Navbar.Click "Yerleşkelerimiz" Dropdown
+    Kariyer.Verify "Yerleşkelerimiz" in show
+
+    Navbar.Click "Sunduğumuz Faydalar" Dropdown
+    Kariyer.Verify "Sosyal Alanlar" in show
+
+    Navbar.Click "Sosyal Alanlar" Dropdown
+    Kariyer.Verify "Sosyal Alanlar" in show
+
+    Navbar.Click "İstatistik" Dropdown
+    Kariyer.Verify "İstatistik" in show
+
+
+
 Click "Login" button as not signed user
     [Arguments]    ${LANG}
     Navbar.Click "Dashboard/Login" button    ${LANG}

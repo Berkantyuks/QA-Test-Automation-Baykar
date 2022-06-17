@@ -10,7 +10,7 @@ Test Teardown    End Baykar Web Test
 *** Variables ***
 ${SITE_URL} =    https://kariyer.baykartech.com/
 ${BROWSER} =    chrome    # add browser driver in env. path before first run
-${RUN_LANG} =    en       # "tr" or "en" [!] lowercase [!]
+${RUN_LANG} =    tr       # "tr" or "en" [!] lowercase [!]
 
 *** Test Cases ***
 Visitor should be able enter site
@@ -26,6 +26,13 @@ Visitor should be able navigate navbar
     Common.Verify Page Loaded    ${RUN_LANG}
     Kariyer.Baykartech.App.Navbar Mouse Over Tests
     Kariyer.Baykartech.App.Click non dropdown sections    ${RUN_LANG}
+
+Visitor should be able click and see all "Kariyer" section pages
+    [Documentation]    All visitors should be able click and see kariyer pages
+    [Tags]    Smoke    Navbar    Career
+    Open Website    ${SITE_URL}${RUN_LANG}
+    Common.Verify Page Loaded    ${RUN_LANG}
+    Kariyer.Baykartech.App.Click "Kariyer" Section Dropdowns and Check Page
 
 Visitor should be able navigate all sliders
     [Documentation]    All visitors should be able navigate all sliders

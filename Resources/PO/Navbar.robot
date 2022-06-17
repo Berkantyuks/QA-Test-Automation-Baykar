@@ -4,24 +4,76 @@ Resource    ../GlobalVariables.robot
 
 *** Variables ***
 ${NAVBAR_SECTION} =    xpath=//*[@id="navbar-menu"]/ul/li
-${FIRST_DROPDOWN_ELEMENT} =   /ul/li[1]/a
+${DROPDOWN_ELEMENT} =   /ul/li
+
+${KARIYER_SECTION_NUMBER} =    1
+${STAJ_SECTION_NUMBER} =    3
 
 ${NAVBAR_LANG_BUTTON} =    xpath=//li[@class='baykarLi']//a
 
 *** Keywords ***
 Mouse Over "Kariyer" Section
     [Documentation]    [1] is a first section in navbar
-    ${sec_num} =  Set Variable   1
+    ${sec_num} =  Set Variable   ${KARIYER_SECTION_NUMBER}
 
     Mouse Over    ${NAVBAR_SECTION}\[${sec_num}\]
-    Wait Until Element Is Visible    ${NAVBAR_SECTION}\[${sec_num}\]${FIRST_DROPDOWN_ELEMENT}
+    Wait Until Element Is Visible    ${NAVBAR_SECTION}\[${sec_num}\]${DROPDOWN_ELEMENT}\[1]/a
+
+Click "Yerleşkelerimiz" Dropdown
+    [Documentation]    Clicks Yerleşkelerimiz dropdown in Kariyer section
+    ${sec_num} =  Set Variable   ${KARIYER_SECTION_NUMBER}
+
+    Run Keyword    Mouse Over "Kariyer" Section
+    Click Link    ${NAVBAR_SECTION}\[${sec_num}\]${DROPDOWN_ELEMENT}\[1]/a
+
+Click "Sunduğumuz Faydalar" Dropdown
+    [Documentation]    Clicks Sunduğumuz Faydalar dropdown in Kariyer section
+    ${sec_num} =  Set Variable   ${KARIYER_SECTION_NUMBER}
+
+    Run Keyword    Mouse Over "Kariyer" Section
+    Click Link    ${NAVBAR_SECTION}\[${sec_num}\]${DROPDOWN_ELEMENT}\[2]/a
+
+Click "Sosyal Alanlar" Dropdown
+    [Documentation]    Clicks Sosyal Alanlar dropdown in Kariyer section
+    ${sec_num} =  Set Variable   ${KARIYER_SECTION_NUMBER}
+
+    Run Keyword    Mouse Over "Kariyer" Section
+    Click Link    ${NAVBAR_SECTION}\[${sec_num}\]${DROPDOWN_ELEMENT}\[3]/a
+
+Click "İstatistik" Dropdown
+    [Documentation]    Clicks İstatistik dropdown in Kariyer section
+    ${sec_num} =  Set Variable   ${KARIYER_SECTION_NUMBER}
+
+    Run Keyword    Mouse Over "Kariyer" Section
+    Click Link    ${NAVBAR_SECTION}\[${sec_num}\]${DROPDOWN_ELEMENT}\[4]/a
 
 Mouse Over "Staj" Section
     [Documentation]    [3] is a third section in navbar
-    ${sec_num} =  Set Variable   3
+    ${sec_num} =  Set Variable   ${STAJ_SECTION_NUMBER}
 
     Mouse Over    ${NAVBAR_SECTION}\[${sec_num}\]
-    Wait Until Element Is Visible    ${NAVBAR_SECTION}\[${sec_num}\]${FIRST_DROPDOWN_ELEMENT}
+    Wait Until Element Is Visible    ${NAVBAR_SECTION}\[${sec_num}\]${DROPDOWN_ELEMENT}\[1]/a
+
+Click "Staj Dönemleri" Dropdown
+    [Documentation]    Clicks Staj Dönemleri dropdown in Staj section
+    ${sec_num} =  Set Variable   ${STAJ_SECTION_NUMBER}
+
+    Run Keyword    Mouse Over "Staj" Section
+    Click Link    ${NAVBAR_SECTION}\[${sec_num}\]${DROPDOWN_ELEMENT}\[1]/a
+
+Click "Staj Takvimi" Dropdown
+    [Documentation]    Clicks Staj Takvimi dropdown in Staj section
+    ${sec_num} =  Set Variable   ${STAJ_SECTION_NUMBER}
+
+    Run Keyword    Mouse Over "Staj" Section
+    Click Link    ${NAVBAR_SECTION}\[${sec_num}\]${DROPDOWN_ELEMENT}\[2]/a
+
+Click "Staj SSS" Dropdown
+    [Documentation]    Clicks Staj SSS dropdown in Staj section
+    ${sec_num} =  Set Variable   ${STAJ_SECTION_NUMBER}
+
+    Run Keyword    Mouse Over "Staj" Section
+    Click Link    ${NAVBAR_SECTION}\[${sec_num}\]${DROPDOWN_ELEMENT}\[3]/a
 
 Click "Açık Pozisyonlar" Section
     [Documentation]    [2] is a second section in navbar
