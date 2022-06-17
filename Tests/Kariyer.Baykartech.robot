@@ -8,7 +8,7 @@ Test Teardown    End Baykar Web Test
 *** Variables ***
 ${SITE_URL} =    https://kariyer.baykartech.com/
 ${BROWSER} =    chrome
-${RUN_LANG} =    tr
+${RUN_LANG} =    en
 
 *** Test Cases ***
 Visitor should be able enter site
@@ -25,9 +25,16 @@ Visitor should be able navigate navbar
     Kariyer.Baykartech.App.Navbar Mouse Over Tests
     Kariyer.Baykartech.App.Click non dropdown sections    ${RUN_LANG}
 
+Visitor should be able navigate main slider
+    [Documentation]    All visitors should be able navigate main slider and see correct image/text
+    [Tags]    Smoke    Main Slider
+    Open Website    ${SITE_URL}${RUN_LANG}
+    Common.Verify Page Loaded    ${RUN_LANG}
+    Kariyer.Baykartech.App.Navigate Main Slider
+
 Visitor should be see "Login", "Forget Password", "Create Account" pages
     [Documentation]    All visitors should be see login page as not signed user
-    [Tags]    Smoke    Login
+    [Tags]    Smoke    Login    Sign Up    Forget Password
     Open Website    ${SITE_URL}${RUN_LANG}
     Common.Verify Page Loaded    ${RUN_LANG}
     Kariyer.Baykartech.App.Click "Login" button as not signed user    ${RUN_LANG}

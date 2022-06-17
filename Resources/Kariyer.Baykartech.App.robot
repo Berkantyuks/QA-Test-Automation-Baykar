@@ -18,6 +18,8 @@ ${OPEN_POZ_SECTION} =    css=div[id='services']
 ${BAYKAR_LIFE_SECTION} =    css=div[id='portfolio']
 ${SSS_SECTION} =    css=div[id='sss']
 
+${SLIDER_RANGE} =    22
+
 
 
 *** Keywords ***
@@ -58,6 +60,9 @@ Click "Forget Password" link as not signed user
 Click "Create Account" link as not signed user
     Forget-Password.Click "Create Account" Link
     Sign-Up.Verify Page Loaded
+
+Navigate Main Slider
+    Homepage.Navigate main slider in loop    ${SLIDER_RANGE}
 
 
 
