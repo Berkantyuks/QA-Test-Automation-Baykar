@@ -1,4 +1,6 @@
 *** Settings ***
+Documentation    This test file includes all tests for kariyer.baykartech.com, if you wanna change Browser or Runtime Language go to variables section in this file.
+
 Resource    ../Resources/Common.robot
 Resource    ../Resources/Kariyer.Baykartech.App.robot
 
@@ -7,8 +9,8 @@ Test Teardown    End Baykar Web Test
 
 *** Variables ***
 ${SITE_URL} =    https://kariyer.baykartech.com/
-${BROWSER} =    chrome
-${RUN_LANG} =    en
+${BROWSER} =    chrome    # add browser driver in env. path before first run
+${RUN_LANG} =    en       # tr or en [!] lowercase [!]
 
 *** Test Cases ***
 Visitor should be able enter site
