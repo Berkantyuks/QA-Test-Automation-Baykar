@@ -41,7 +41,7 @@ Visitor should be able click and see all "Staj" section pages
     Common.Verify Page Loaded    ${RUN_LANG}
     Kariyer.Baykartech.App.Click "Staj" Section Dropdowns and Check Page
 
-Visitor should be able navigate all sliders
+Visitor should be able navigate all sliders and panels
     [Documentation]    All visitors should be able navigate all sliders
     [Tags]    Smoke    Main Slider    Open Poz Slider
     Open Website    ${SITE_URL}${RUN_LANG}
@@ -49,6 +49,7 @@ Visitor should be able navigate all sliders
     Kariyer.Baykartech.App.Navigate "Main" Slider
     Kariyer.Baykartech.App.Navigate "Open Positions" Slider
     Kariyer.Baykartech.App.Navigate "Life in Baykar" Slider
+    Kariyer.Baykartech.App.Navigate SSS Panel Lists
 
 Visitor should be see "Login", "Forget Password", "Create Account" pages
     [Documentation]    All visitors should be see dashboard input pages as not signed user

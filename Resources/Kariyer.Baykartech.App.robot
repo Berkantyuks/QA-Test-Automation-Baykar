@@ -62,8 +62,13 @@ Click "Kariyer" Section Dropdowns and Check Page
 
 Click "Staj" Section Dropdowns and Check Page
     Navbar.Click "Staj Dönemleri" Dropdown
+    Staj.Verify "Staj Dönemleri" in show
+
     Navbar.Click "Staj Takvimi" Dropdown
+    Staj.Verify "Staj Takvimi" in show
+
     Navbar.Click "Staj SSS" Dropdown
+    Staj.Verify "Staj SSS" in show
 
 
 
@@ -90,6 +95,9 @@ Navigate "Open Positions" Slider
 Navigate "Life in Baykar" Slider
     Homepage.Navigate life in baykar slider in loop    ${LIFE_IN_BAYKAR_SLIDER_RANGE}    BACKWARD
     Homepage.Navigate life in baykar slider in loop    ${LIFE_IN_BAYKAR_SLIDER_RANGE}    FORWARD
+
+Navigate SSS Panel Lists
+    Homepage.Click all sss panels in loop    5
 
 Navigate "Footer" Elements
     [Arguments]    ${LANG}
