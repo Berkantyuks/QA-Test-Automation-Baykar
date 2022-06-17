@@ -60,6 +60,11 @@ Click "Kariyer" Section Dropdowns and Check Page
     Navbar.Click "İstatistik" Dropdown
     Kariyer.Verify "İstatistik" in show
 
+Click "Staj" Section Dropdowns and Check Page
+    Navbar.Click "Staj Dönemleri" Dropdown
+    Navbar.Click "Staj Takvimi" Dropdown
+    Navbar.Click "Staj SSS" Dropdown
+
 
 
 Click "Login" button as not signed user

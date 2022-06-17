@@ -34,6 +34,13 @@ Visitor should be able click and see all "Kariyer" section pages
     Common.Verify Page Loaded    ${RUN_LANG}
     Kariyer.Baykartech.App.Click "Kariyer" Section Dropdowns and Check Page
 
+Visitor should be able click and see all "Staj" section pages
+    [Documentation]    All visitors should be able click and see Staj pages
+    [Tags]    Smoke    Navbar    Intern
+    Open Website    ${SITE_URL}${RUN_LANG}
+    Common.Verify Page Loaded    ${RUN_LANG}
+    Kariyer.Baykartech.App.Click "Staj" Section Dropdowns and Check Page
+
 Visitor should be able navigate all sliders
     [Documentation]    All visitors should be able navigate all sliders
     [Tags]    Smoke    Main Slider    Open Poz Slider
