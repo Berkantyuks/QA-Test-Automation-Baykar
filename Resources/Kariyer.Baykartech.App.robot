@@ -46,7 +46,6 @@ Click non dropdown sections
     Navbar.Change Language
     Run Keyword If    "${LANG}" == "tr"   Common.Verify Page Loaded    tr    ELSE    Common.Verify Page Loaded    en
 
-
 Click "Kariyer" Section Dropdowns and Check Page
     Navbar.Click "Yerleşkelerimiz" Dropdown
     Kariyer.Verify "Yerleşkelerimiz" in show
@@ -69,8 +68,6 @@ Click "Staj" Section Dropdowns and Check Page
 
     Navbar.Click "Staj SSS" Dropdown
     Staj.Verify "Staj SSS" in show
-
-
 
 Click "Login" button as not signed user
     [Arguments]    ${LANG}

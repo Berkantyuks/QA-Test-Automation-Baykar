@@ -17,10 +17,6 @@ ${SSS_PANEL_HEADING} =    /div[@class='panel-heading']
 
 ${SSS_CONTACT_SECTION} =    xpath=//div[@id='contact']
 
-
-
-
-
 *** Keywords ***
 Verify Section is Visible
     [Arguments]    ${SECTION_ELEMENT}

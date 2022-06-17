@@ -21,7 +21,7 @@ Visitor should be able enter site
 
 Visitor should be able navigate navbar
     [Documentation]    All visitors should be able navigate navbar
-    [Tags]    Smoke    Navbar
+    [Tags]    Smoke    Navbar Common
     Open Website    ${SITE_URL}${RUN_LANG}
     Common.Verify Page Loaded    ${RUN_LANG}
     Kariyer.Baykartech.App.Navbar Mouse Over Tests
@@ -29,21 +29,21 @@ Visitor should be able navigate navbar
 
 Visitor should be able click and see all "Kariyer" section pages
     [Documentation]    All visitors should be able click and see kariyer pages
-    [Tags]    Smoke    Navbar    Career
+    [Tags]    Smoke    Navbar Career
     Open Website    ${SITE_URL}${RUN_LANG}
     Common.Verify Page Loaded    ${RUN_LANG}
     Kariyer.Baykartech.App.Click "Kariyer" Section Dropdowns and Check Page
 
 Visitor should be able click and see all "Staj" section pages
     [Documentation]    All visitors should be able click and see Staj pages
-    [Tags]    Smoke    Navbar    Intern
+    [Tags]    Smoke    Navbar Intern
     Open Website    ${SITE_URL}${RUN_LANG}
     Common.Verify Page Loaded    ${RUN_LANG}
     Kariyer.Baykartech.App.Click "Staj" Section Dropdowns and Check Page
 
 Visitor should be able navigate all sliders and panels
     [Documentation]    All visitors should be able navigate all sliders
-    [Tags]    Smoke    Main Slider    Open Poz Slider
+    [Tags]    Smoke    Main Slider    Open Pos Slider    Life in Baykar Slider    SSS Panels
     Open Website    ${SITE_URL}${RUN_LANG}
     Common.Verify Page Loaded    ${RUN_LANG}
     Kariyer.Baykartech.App.Navigate "Main" Slider
