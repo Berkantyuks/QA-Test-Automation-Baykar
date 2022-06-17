@@ -50,3 +50,4 @@ Visitor should be able click and see all "Footer" elements
     [Tags]    Smoke    Footer
     Open Website    ${SITE_URL}${RUN_LANG}
     Common.Verify Page Loaded    ${RUN_LANG}
+    Kariyer.Baykartech.App.Navigate "Footer" Elements    ${RUN_LANG}

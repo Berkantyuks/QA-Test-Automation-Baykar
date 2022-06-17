@@ -11,7 +11,10 @@ Scroll to end of the page
     Scroll Element Into View    ${PAGE_END}
 
 Navigate footer elements in loop
-    [Arguments]    ${ITEM_RANGE}
-    FOR   ${LINK}  IN ZIP   @{FOOTER_LINKS_TR}    @{FOOTER_LINKS_EN}
-
+    [Documentation]    Clicks all footer links by created list
+    [Arguments]    ${LANG}
+    FOR   ${LINK_TR}  ${LINK_EN}  IN ZIP   ${FOOTER_LINKS_TR}    ${FOOTER_LINKS_EN}
+        Run Keyword If   "${LANG}" == "tr"    Click Link    ${LINK_TR}    ELSE IF    "${LANG}" == "en"    Click Link    ${LINK_EN}
+        Go Back
+        Run Keyword    Scroll to end of the page
     END
