@@ -33,6 +33,7 @@ Visitor should be able click and see all "Kariyer" section pages
     Open Website    ${SITE_URL}${RUN_LANG}
     Common.Verify Page Loaded    ${RUN_LANG}
     Kariyer.Baykartech.App.Click "Kariyer" Section Dropdowns and Check Page
+    Kariyer.Baykartech.App.Navigate "Benefits" Panels    ${RUN_LANG}
 
 Visitor should be able click and see all "Staj" section pages
     [Documentation]    All visitors should be able click and see Staj pages

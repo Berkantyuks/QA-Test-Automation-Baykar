@@ -60,6 +60,10 @@ Click "Kariyer" Section Dropdowns and Check Page
     Navbar.Click "İstatistik" Dropdown
     Kariyer.Verify "İstatistik" in show
 
+Navigate "Benefits" Panels
+    [Arguments]    ${LANG}
+    Kariyer.Click and Check "Benefits" panel in loop    ${LANG}
+
 Click "Staj" Section Dropdowns and Check Page
     Navbar.Click "Staj Dönemleri" Dropdown
     Staj.Verify "Staj Dönemleri" in show
