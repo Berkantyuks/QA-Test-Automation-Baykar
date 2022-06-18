@@ -7,6 +7,7 @@ Resource    ./PO/Footer.robot
 Resource    ./PO/Homepage.robot
 Resource    ./PO/Kariyer.robot
 Resource    ./PO/Staj.robot
+Resource    ./PO/Application.robot
 Resource    ./PO/Dashboard/Sign-In.robot
 Resource    ./PO/Dashboard/Sign-Up.robot
 Resource    ./PO/Dashboard/Forget-Password.robot
@@ -74,6 +75,15 @@ Check and click "Staj Dönemleri" section
     Navbar.Click "Staj Dönemleri" Dropdown
     Staj.Verify "Staj Dönemleri" in show
     Run Keyword And Continue On Failure  Staj.Check "Staj Dönemleri" Displays Correct Text by Language    ${LANG}
+    Staj.Click "Güz Dönemi" Link
+    Application.Verify Page Loaded
+    Go Back
+    Staj.Click "Bahar Dönemi" Link
+    Application.Verify Page Loaded
+    Go Back
+    Staj.Click "Yaz Dönemi" Link
+    Application.Verify Page Loaded
+
 
 Click "Login" button as not signed user
     [Arguments]    ${LANG}

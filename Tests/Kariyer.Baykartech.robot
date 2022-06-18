@@ -8,7 +8,7 @@ Test Setup    Start Baykar Web Test    ${BROWSER}
 Test Teardown    End Baykar Web Test
 
 *** Variables ***
-${SITE_URL} =    https://kariyer.baykartech.com/
+${SITE_URL} =    https://kariyer.baykartech.com/    # [!] DO NOT CHANGE SITE URL [!]
 ${BROWSER} =    chrome    # add browser driver in env. path before first run
 ${RUN_LANG} =    tr       # "tr" or "en" [!] lowercase [!]
 
