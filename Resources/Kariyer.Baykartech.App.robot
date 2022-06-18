@@ -69,6 +69,12 @@ Click "Staj" Section Dropdowns and Check Page
     Navbar.Click "Staj SSS" Dropdown
     Staj.Verify "Staj SSS" in show
 
+Check and click "Staj Dönemleri" section
+    [Arguments]    ${LANG}
+    Navbar.Click "Staj Dönemleri" Dropdown
+    Staj.Verify "Staj Dönemleri" in show
+    Run Keyword And Continue On Failure  Staj.Check "Staj Dönemleri" Displays Correct Text by Language    ${LANG}
+
 Click "Login" button as not signed user
     [Arguments]    ${LANG}
     Navbar.Click "Dashboard/Login" button    ${LANG}
