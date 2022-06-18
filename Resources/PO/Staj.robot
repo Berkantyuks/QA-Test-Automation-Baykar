@@ -26,5 +26,14 @@ Verify "Staj SSS" in show
 Check "Staj Dönemleri" Displays Correct Text by Language
     [Arguments]    ${LANG}
     Run Keyword If  "${LANG}" == "tr"  Element Text Should Be    ${AUTUMN_TERM}    GÜZ DÖNEMİ    ELSE IF   "${LANG}" == "en"    Element Text Should Be    ${AUTUMN_TERM}    AUTUMN PERIOD
-    Run Keyword If  "${LANG}" == "tr"  Element Text Should Be    ${SPRING_TERM}    BAHAR DÖNEMİ    ELSE IF   "${LANG}" == "en"    Element Text Should Be    ${AUTUMN_TERM}    SPRING PERIOD
-    Run Keyword If  "${LANG}" == "tr"  Element Text Should Be    ${SPRING_TERM}    YAZ DÖNEMİ    ELSE IF   "${LANG}" == "en"    Element Text Should Be    ${AUTUMN_TERM}    SUMMER PERIOD
+    Run Keyword If  "${LANG}" == "tr"  Element Text Should Be    ${SPRING_TERM}    BAHAR DÖNEMİ    ELSE IF   "${LANG}" == "en"    Element Text Should Be    ${SPRING_TERM}    SPRING PERIOD
+    Run Keyword If  "${LANG}" == "tr"  Element Text Should Be    ${SUMMER_TERM}    YAZ DÖNEMİ    ELSE IF   "${LANG}" == "en"    Element Text Should Be    ${SUMMER_TERM}    SUMMER PERIOD
+
+Click "Güz Dönemi" Link
+    Click Link    ${AUTUMN_TERM}
+
+Click "Bahar Dönemi" Link
+    Click Link    ${SPRING_TERM}
+
+Click "Yaz Dönemi" Link
+    Click Link    ${SPRING_TERM}
