@@ -1,7 +1,7 @@
-def  create_a_list_by_number(listlen):
+def create_a_list_by_number(listlen):
     list = []
 
-    for i in range(1,listlen):
+    for i in range(1, listlen):
 
         list.append(i)
 
