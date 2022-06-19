@@ -68,3 +68,9 @@ Visitor should be able click and see all "Footer" elements
     Open Website    ${SITE_URL}${RUN_LANG}
     Common.Verify Page Loaded    ${RUN_LANG}
     Kariyer.Baykartech.App.Navigate "Footer" Elements    ${RUN_LANG}
+
+Check System Page integration is Stable
+    [Documentation]    All pages in website should be integrated with others
+    [Tags]    Integration
+    Open Website    ${SITE_URL}${RUN_LANG}
+    Common.Verify Page Loaded    ${RUN_LANG}
