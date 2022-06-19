@@ -44,7 +44,7 @@ Click and Check "Benefits" panel in loop
     ${listed_len} =    create a list by number  ${list_len}
 
     Scroll Element Into View    ${BENEFITS_LIST_XPATH}
-    Sleep    2s
+    Wait Until Element Is Visible    ${BENEFITS_LIST_XPATH}
     FOR    ${BENEFIT_TR}    ${BENEFIT_EN}    ${i}    IN ZIP    ${BENEFITS_LIST_TR}    ${BENEFITS_LIST_EN}    ${listed_len}
         Click Element    ${BENEFITS_LIST_XPATH}\//li[${i}\]
         Sleep    0.5s
