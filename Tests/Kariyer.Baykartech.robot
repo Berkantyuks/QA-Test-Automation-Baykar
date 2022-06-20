@@ -10,7 +10,7 @@ Test Teardown    End Baykar Web Test
 *** Variables ***
 ${SITE_URL} =    https://kariyer.baykartech.com/    # [!] DO NOT CHANGE SITE URL [!]
 ${BROWSER} =    chrome    # add browser driver in env. path before first run
-${RUN_LANG} =    en       # "tr" or "en" [!] lowercase [!]
+${RUN_LANG} =    tr       # "tr" or "en" [!] lowercase [!]
 
 *** Test Cases ***
 Visitor should be able enter site
@@ -71,6 +71,9 @@ Visitor should be able click and see all "Footer" elements
 
 Check System Page integration is Stable
     [Documentation]    All pages in website should be integrated with others
-    [Tags]    Integration
+    [Tags]    Integration    I-01
     Open Website    ${SITE_URL}${RUN_LANG}
     Common.Verify Page Loaded    ${RUN_LANG}
+    Kariyer.Baykartech.App.Navigate "Career" page to "Open Positions" Section
+    Kariyer.Baykartech.App.Navigate "Intern" page to "Open Positions" Section
+    Kariyer.Baykartech.App.Navigate "Intern" page to "Life In Baykar" Section

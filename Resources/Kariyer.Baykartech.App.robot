@@ -121,7 +121,26 @@ Navigate "Footer" Elements
     Footer.Scroll to end of the page
     Footer.Navigate footer elements in loop    ${LANG}
 
+Navigate "Career" page to "Open Positions" Section
+    Navbar.Click "Yerleşkelerimiz" Dropdown
+    Run Keyword And Continue On Failure    Kariyer.Verify "Yerleşkelerimiz" in show
 
+    Navbar.Click "Açık Pozisyonlar" Section
+    Run Keyword And Continue On Failure  Homepage.Verify Section is Visible    ${OPEN_POZ_SECTION}
+
+Navigate "Intern" page to "Open Positions" Section
+    Navbar.Click "Staj Dönemleri" Dropdown
+    Run Keyword And Continue On Failure    Staj.Verify "Staj Dönemleri" in show
+
+    Navbar.Click "Açık Pozisyonlar" Section
+    Run Keyword And Continue On Failure  Homepage.Verify Section is Visible    ${OPEN_POZ_SECTION}
+
+Navigate "Intern" page to "Life In Baykar" Section
+    Navbar.Click "Staj Dönemleri" Dropdown
+    Run Keyword And Continue On Failure    Staj.Verify "Staj Dönemleri" in show
+
+    Navbar.Click "Baykarda Yaşam" Section
+    Run Keyword And Continue On Failure  Homepage.Verify Section is Visible    ${BAYKAR_LIFE_SECTION}
 
 
 
