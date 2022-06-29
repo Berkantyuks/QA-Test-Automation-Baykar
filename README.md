@@ -16,7 +16,7 @@ be Easy-To-Read, Easy-To-Maintain and Easy-To-Understand. File Includes: </p>
  <li>QA: General Opinion</li>
  <li>QA: Rating</li>
  </ul>
- <p>Overall System Score: B+, Given Test Class A Mark.</br> Test File Index: TEST-001-A</p>
+ <p>Overall System Score: B+, Given Test Class A Mark.(Please see QA PDF File for more info: Page 12.)</br> Test File Index: TEST-001-A</p>
  
  ### You Can Reach QA Test PDF File From Link Below
  <a href="https://github.com/Berkantyuks/QA-Test-Automation-Baykar/blob/main/Documents/Berkant-Yuksektepe-QA-Project-Updated.pdf">Berkant-Yuksektepe-QA-Project-Updated.pdf</a>
