@@ -3,18 +3,49 @@
  ![Selenium](https://img.shields.io/badge/Selenium-000000?style=for-the-badge&logo=Selenium&logoColor=white)
  ![Git](https://img.shields.io/badge/GIT-000000?style=for-the-badge&logo=git&logoColor=white)
  ![ChromeDriver](https://img.shields.io/badge/Google_chrome-000000?style=for-the-badge&logo=Google-chrome&logoColor=white)
+ 
+ <p>Software All-Encompassing QA Test Project For Baykar's Career Website. Automated tests are Designed for
+be Easy-To-Read, Easy-To-Maintain and Easy-To-Understand. File Includes: </p>
+ <ul>
+ <li>User Guide</li>
+ <li>How to Execute Automated Tests</li>
+ <li>Automated Test Scenarios</li>
+ <li>Automated Test Results</li>
+ <li>Manual Test Scenarios</li>
+ <li>Manual Test Results</li>
+ <li>QA: General Opinion</li>
+ <li>QA: Rating</li>
+ </ul>
+ <p>Overall System Score: B+, Given Test Class A Mark.</br> Test File Index: TEST-001-A</p>
+ 
+ ### You Can Reach QA Test PDF File From Link Below
+ <a href="https://github.com/Berkantyuks/QA-Test-Automation-Baykar/blob/main/Documents/Berkant-Yuksektepe-QA-Project-Updated.pdf">Berkant-Yuksektepe-QA-Project-Updated.pdf</a>
+ 
+ <p>Or see in Readme file:</p>
+
+![image](https://user-images.githubusercontent.com/61010367/176451854-e79b5d8c-ff5a-4006-9a46-6d90ae918617.png)
+![image2](https://user-images.githubusercontent.com/61010367/176452189-5d8421d8-6619-47f8-903d-004ee358a4de.png)
+![image3](https://user-images.githubusercontent.com/61010367/176452248-e4c0197f-f794-41cc-a411-24eda5ea6e7c.png)
+![image4](https://user-images.githubusercontent.com/61010367/176452385-69c780a4-da1d-49dc-959d-8d629d29ae50.png)
+![image5](https://user-images.githubusercontent.com/61010367/176452438-c96f010d-3faf-4a31-845f-0fcdbe9b31ce.png)
+![image6](https://user-images.githubusercontent.com/61010367/176452518-d9bd7f02-3ce9-4791-8ea9-5407215a6e3c.png)
+![image7](https://user-images.githubusercontent.com/61010367/176452640-0b3cf709-0dcc-4c01-bc96-35a3512e4faa.png)
+![image8](https://user-images.githubusercontent.com/61010367/176452719-0a5e3a55-e14c-4777-8596-739e6b47cccb.png)
+![image9](https://user-images.githubusercontent.com/61010367/176452931-2268fcd4-a2ab-406f-81b9-a10e156dc1df.png)
+![image10](https://user-images.githubusercontent.com/61010367/176453008-4909fe83-7ac4-4aae-b281-12ed4a6983fa.png)
+![image11](https://user-images.githubusercontent.com/61010367/176453071-2184e507-bc34-41c1-9559-8e7c2876c807.png)
+![image12](https://user-images.githubusercontent.com/61010367/176453158-89a71ab3-5c7e-4323-95df-a51a6b3d65aa.png)
 
 
-![1](https://user-images.githubusercontent.com/61010367/174626062-1fafa016-cd29-4bec-bb82-6568315c330a.jpg)
-![2](https://user-images.githubusercontent.com/61010367/174626099-4ef6d3c2-16dd-4100-babc-0fd7311e4700.jpg)
-![3](https://user-images.githubusercontent.com/61010367/174626131-3fa7adfc-cf8c-443c-a0f0-44a799730325.jpg)
-![4](https://user-images.githubusercontent.com/61010367/174626160-5b3f2e43-fcfb-46f7-8b8a-02d2e52d8c69.jpg)
-![5](https://user-images.githubusercontent.com/61010367/174626192-d169173e-7d44-483b-ba23-03d99a09fbcc.jpg)
-![6](https://user-images.githubusercontent.com/61010367/174626222-2d5f071f-59ee-4a87-ab34-4c50ca23b5f8.jpg)
-![7](https://user-images.githubusercontent.com/61010367/174626251-3c5a3f65-5388-4fa5-af09-2376315aa668.jpg)
-![8](https://user-images.githubusercontent.com/61010367/174626269-624905d5-ac7f-4a68-86ec-70762910d59b.jpg)
-![9](https://user-images.githubusercontent.com/61010367/174626279-329c4b27-f5fc-4829-9034-19a85e46070e.jpg)
-![10](https://user-images.githubusercontent.com/61010367/174626298-6a44d646-67fb-462d-a01a-490ef613156d.jpg)
-![11](https://user-images.githubusercontent.com/61010367/174626310-3feb71f9-5265-438e-bff2-dfc7c21b0ff9.jpg)
-![12](https://user-images.githubusercontent.com/61010367/174626323-f8478039-cd2b-479a-b738-c79632633873.jpg)
+
+
+
+
+
+
+
+
+
+
+
 
