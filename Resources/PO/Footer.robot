@@ -1,5 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
+Resource    ../Common.robot
 
 *** Variables ***
 @{FOOTER_LINKS_TR} =    xpath=//footer//a[.="Hakkımızda"]    xpath=//footer//a[.="Yönetim"]    xpath=//footer//a[.="Tarihçe"]    xpath=//footer//a[.="Açık Pozisyonlar"]    xpath=//footer//a[.="İş"]    xpath=//footer//a[.="Staj"]    xpath=//footer//a[.="İletişim"]    xpath=//footer//a[.="KVKK"]
@@ -16,6 +17,7 @@ Navigate footer elements in loop
     FOR   ${LINK_TR}  ${LINK_EN}  IN ZIP   ${FOOTER_LINKS_TR}    ${FOOTER_LINKS_EN}
         Run Keyword If   "${LANG}" == "tr"    Click Link    ${LINK_TR}    ELSE IF    "${LANG}" == "en"    Click Link    ${LINK_EN}
         Go Back
+        Common.Verify Page Loaded    ${LANG}
         Wait Until Element Is Visible    ${PAGE_END}
         Run Keyword    Scroll to end of the page
     END
