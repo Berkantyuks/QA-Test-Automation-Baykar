@@ -15,7 +15,7 @@ Navigate footer elements in loop
     [Documentation]    Clicks all footer links by created list
     [Arguments]    ${LANG}
     FOR   ${LINK_TR}  ${LINK_EN}  IN ZIP   ${FOOTER_LINKS_TR}    ${FOOTER_LINKS_EN}
-        Run Keyword If   "${LANG}" == "tr"    Click Link    ${LINK_TR}    ELSE IF    "${LANG}" == "en"    Click Link    ${LINK_EN}
+        Run Keyword If   "${LANG}" == "tr"   Click Link    ${LINK_TR}    ELSE IF    "${LANG}" == "en"    Click Link    ${LINK_EN}
         Go Back
         Common.Verify Page Loaded    ${LANG}
         Wait Until Element Is Visible    ${PAGE_END}
