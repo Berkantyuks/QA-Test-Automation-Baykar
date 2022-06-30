@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220630 23:49:56.725" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220630 23:56:46.274" rpa="false" schemaversion="3">
 <suite id="s1" name="Tests" source="C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\tests">
 <suite id="s1-s1" name="Kariyer.Baykartech" source="C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\tests\Kariyer.Baykartech.robot">
 <test id="s1-s1-t1" name="Visitor should be able click and see all &quot;Footer&quot; elements" line="65">
@@ -9,25 +9,25 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220630 23:49:56.953" level="INFO">Opening browser 'firefox' to base url 'about:blank'.</msg>
-<msg timestamp="20220630 23:49:56.954" level="INFO">Firefox driver log is always forced to to: C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\results\geckodriver-17.log</msg>
-<status status="PASS" starttime="20220630 23:49:56.953" endtime="20220630 23:50:01.884"/>
+<msg timestamp="20220630 23:56:46.507" level="INFO">Opening browser 'firefox' to base url 'about:blank'.</msg>
+<msg timestamp="20220630 23:56:46.508" level="INFO">Firefox driver log is always forced to to: C:\Users\byuks\Desktop\QA\QA-Test-Automation-Baykar\results\geckodriver-18.log</msg>
+<status status="PASS" starttime="20220630 23:56:46.506" endtime="20220630 23:56:51.459"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220630 23:50:01.884" endtime="20220630 23:50:02.146"/>
+<status status="PASS" starttime="20220630 23:56:51.459" endtime="20220630 23:56:51.722"/>
 </kw>
-<status status="PASS" starttime="20220630 23:49:56.953" endtime="20220630 23:50:02.146"/>
+<status status="PASS" starttime="20220630 23:56:46.506" endtime="20220630 23:56:51.722"/>
 </kw>
 <kw name="Open Website" library="Common">
 <arg>${SITE_URL}${RUN_LANG}</arg>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${SITE_URL}\/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220630 23:50:02.148" level="INFO">Opening url 'https://kariyer.baykartech.com/tr/'</msg>
-<status status="PASS" starttime="20220630 23:50:02.147" endtime="20220630 23:50:10.163"/>
+<msg timestamp="20220630 23:56:51.723" level="INFO">Opening url 'https://kariyer.baykartech.com/tr/'</msg>
+<status status="PASS" starttime="20220630 23:56:51.723" endtime="20220630 23:57:00.327"/>
 </kw>
-<status status="PASS" starttime="20220630 23:50:02.147" endtime="20220630 23:50:10.164"/>
+<status status="PASS" starttime="20220630 23:56:51.722" endtime="20220630 23:57:00.328"/>
 </kw>
 <kw name="Verify Page Loaded" library="Common">
 <arg>${RUN_LANG}</arg>
@@ -35,20 +35,35 @@
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${BAYKAR_LOGO_${LANG}}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220630 23:50:10.164" endtime="20220630 23:50:10.202"/>
+<status status="PASS" starttime="20220630 23:57:00.328" endtime="20220630 23:57:00.371"/>
 </kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${check_loader}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${PRE_LOADER}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${PRE_LOADER}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220630 23:57:00.389" level="INFO">Element 'xpath=//div[@class='se-pre-con']' is displayed.</msg>
+<status status="PASS" starttime="20220630 23:57:00.371" endtime="20220630 23:57:00.389"/>
+</kw>
+<msg timestamp="20220630 23:57:00.389" level="INFO">${check_loader} = True</msg>
+<status status="PASS" starttime="20220630 23:57:00.371" endtime="20220630 23:57:00.389"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${check_loader}</arg>
+<arg>Wait Until Element Is Not Visible</arg>
+<arg>${PRE_LOADER}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>${PRE_LOADER}</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20220630 23:50:10.202" endtime="20220630 23:50:10.872"/>
+<status status="PASS" starttime="20220630 23:57:00.390" endtime="20220630 23:57:01.068"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220630 23:50:11.886" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220630 23:50:10.872" endtime="20220630 23:50:11.886"/>
+<status status="PASS" starttime="20220630 23:57:00.389" endtime="20220630 23:57:01.068"/>
 </kw>
-<status status="PASS" starttime="20220630 23:50:10.164" endtime="20220630 23:50:11.886"/>
+<status status="PASS" starttime="20220630 23:57:00.328" endtime="20220630 23:57:01.068"/>
 </kw>
 <kw name="Navigate &quot;Footer&quot; Elements" library="Kariyer.Baykartech.App">
 <arg>${RUN_LANG}</arg>
@@ -60,8 +75,8 @@
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${PAGE_END}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<msg timestamp="20220630 23:50:12.069" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-39.png"&gt;&lt;img src="selenium-screenshot-39.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220630 23:50:12.069" level="FAIL">MoveTargetOutOfBoundsException: Message: (475, 2686) is out of bounds of viewport width (1536) and height (731)
+<msg timestamp="20220630 23:57:01.258" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-42.png"&gt;&lt;img src="selenium-screenshot-42.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220630 23:57:01.258" level="FAIL">MoveTargetOutOfBoundsException: Message: (475, 2686) is out of bounds of viewport width (1536) and height (731)
 Stacktrace:
 WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
 MoveTargetOutOfBoundsError@chrome://remote/content/shared/webdriver/Errors.jsm:376:5
@@ -74,11 +89,11 @@ action.dispatch@chrome://remote/content/marionette/action.js:754:5
 performActions@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:459:18
 receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:144:31
 </msg>
-<status status="FAIL" starttime="20220630 23:50:11.888" endtime="20220630 23:50:12.071"/>
+<status status="FAIL" starttime="20220630 23:57:01.070" endtime="20220630 23:57:01.260"/>
 </kw>
-<status status="PASS" starttime="20220630 23:50:11.888" endtime="20220630 23:50:12.071"/>
+<status status="PASS" starttime="20220630 23:57:01.069" endtime="20220630 23:57:01.260"/>
 </kw>
-<status status="PASS" starttime="20220630 23:50:11.887" endtime="20220630 23:50:12.071"/>
+<status status="PASS" starttime="20220630 23:57:01.069" endtime="20220630 23:57:01.260"/>
 </kw>
 <kw name="Navigate footer elements in loop" library="Footer">
 <arg>${LANG}</arg>
@@ -103,19 +118,19 @@ receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${LINK_TR}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220630 23:50:12.072" level="INFO">Clicking link 'xpath=//footer//a[.="Hakkımızda"]'.</msg>
-<status status="PASS" starttime="20220630 23:50:12.072" endtime="20220630 23:50:13.154"/>
+<msg timestamp="20220630 23:57:01.261" level="INFO">Clicking link 'xpath=//footer//a[.="Hakkımızda"]'.</msg>
+<status status="PASS" starttime="20220630 23:57:01.261" endtime="20220630 23:57:02.342"/>
 </kw>
-<status status="PASS" starttime="20220630 23:50:12.072" endtime="20220630 23:50:13.155"/>
+<status status="PASS" starttime="20220630 23:57:01.261" endtime="20220630 23:57:02.342"/>
 </kw>
 <kw name="Go Back" library="SeleniumLibrary">
 <doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" starttime="20220630 23:50:13.155" endtime="20220630 23:50:13.614"/>
+<status status="PASS" starttime="20220630 23:57:02.343" endtime="20220630 23:57:02.894"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${PAGE_END}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220630 23:50:13.614" endtime="20220630 23:50:13.658"/>
+<status status="PASS" starttime="20220630 23:57:02.894" endtime="20220630 23:57:02.939"/>
 </kw>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>Scroll to end of the page</arg>
@@ -128,8 +143,8 @@ receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${PAGE_END}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<msg timestamp="20220630 23:50:13.739" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-40.png"&gt;&lt;img src="selenium-screenshot-40.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220630 23:50:13.740" level="FAIL">MoveTargetOutOfBoundsException: Message: (475, 877) is out of bounds of viewport width (1536) and height (731)
+<msg timestamp="20220630 23:57:03.030" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-43.png"&gt;&lt;img src="selenium-screenshot-43.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220630 23:57:03.030" level="FAIL">MoveTargetOutOfBoundsException: Message: (475, 877) is out of bounds of viewport width (1536) and height (731)
 Stacktrace:
 WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
 MoveTargetOutOfBoundsError@chrome://remote/content/shared/webdriver/Errors.jsm:376:5
@@ -142,15 +157,15 @@ action.dispatch@chrome://remote/content/marionette/action.js:754:5
 performActions@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:459:18
 receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:144:31
 </msg>
-<status status="FAIL" starttime="20220630 23:50:13.659" endtime="20220630 23:50:13.740"/>
+<status status="FAIL" starttime="20220630 23:57:02.939" endtime="20220630 23:57:03.031"/>
 </kw>
-<status status="PASS" starttime="20220630 23:50:13.659" endtime="20220630 23:50:13.740"/>
+<status status="PASS" starttime="20220630 23:57:02.939" endtime="20220630 23:57:03.031"/>
 </kw>
-<status status="PASS" starttime="20220630 23:50:13.659" endtime="20220630 23:50:13.740"/>
+<status status="PASS" starttime="20220630 23:57:02.939" endtime="20220630 23:57:03.031"/>
 </kw>
-<status status="PASS" starttime="20220630 23:50:13.658" endtime="20220630 23:50:13.740"/>
+<status status="PASS" starttime="20220630 23:57:02.939" endtime="20220630 23:57:03.031"/>
 </kw>
-<status status="PASS" starttime="20220630 23:50:12.072" endtime="20220630 23:50:13.740"/>
+<status status="PASS" starttime="20220630 23:57:01.261" endtime="20220630 23:57:03.031"/>
 </iter>
 <iter>
 <var name="${LINK_TR}">xpath=//footer//a[.="Yönetim"]</var>
@@ -167,9 +182,9 @@ receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${LINK_TR}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220630 23:50:13.741" level="INFO">Clicking link 'xpath=//footer//a[.="Yönetim"]'.</msg>
-<msg timestamp="20220630 23:50:13.836" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-41.png"&gt;&lt;img src="selenium-screenshot-41.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220630 23:50:13.836" level="FAIL">ElementClickInterceptedException: Message: Element &lt;a href="https://www.baykartech.com/tr/yonetim/"&gt; is not clickable at point (616,721) because another element &lt;div class="se-pre-con"&gt; obscures it
+<msg timestamp="20220630 23:57:03.033" level="INFO">Clicking link 'xpath=//footer//a[.="Yönetim"]'.</msg>
+<msg timestamp="20220630 23:57:03.134" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-44.png"&gt;&lt;img src="selenium-screenshot-44.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220630 23:57:03.135" level="FAIL">ElementClickInterceptedException: Message: Element &lt;a href="https://www.baykartech.com/tr/yonetim/"&gt; is not clickable at point (616,721) because another element &lt;div class="se-pre-con"&gt; obscures it
 Stacktrace:
 WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
 ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.jsm:285:5
@@ -178,43 +193,43 @@ interaction.clickElement@chrome://remote/content/marionette/interaction.js:125:1
 clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:203:24
 receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:91:31
 </msg>
-<status status="FAIL" starttime="20220630 23:50:13.741" endtime="20220630 23:50:13.837"/>
+<status status="FAIL" starttime="20220630 23:57:03.032" endtime="20220630 23:57:03.136"/>
 </kw>
-<status status="FAIL" starttime="20220630 23:50:13.741" endtime="20220630 23:50:13.837"/>
+<status status="FAIL" starttime="20220630 23:57:03.032" endtime="20220630 23:57:03.136"/>
 </kw>
 <kw name="Go Back" library="SeleniumLibrary">
 <doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="NOT RUN" starttime="20220630 23:50:13.838" endtime="20220630 23:50:13.838"/>
+<status status="NOT RUN" starttime="20220630 23:57:03.137" endtime="20220630 23:57:03.137"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${PAGE_END}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20220630 23:50:13.838" endtime="20220630 23:50:13.838"/>
+<status status="NOT RUN" starttime="20220630 23:57:03.137" endtime="20220630 23:57:03.137"/>
 </kw>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>Scroll to end of the page</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<status status="NOT RUN" starttime="20220630 23:50:13.838" endtime="20220630 23:50:13.838"/>
+<status status="NOT RUN" starttime="20220630 23:57:03.137" endtime="20220630 23:57:03.137"/>
 </kw>
-<status status="FAIL" starttime="20220630 23:50:13.740" endtime="20220630 23:50:13.838"/>
+<status status="FAIL" starttime="20220630 23:57:03.031" endtime="20220630 23:57:03.137"/>
 </iter>
-<status status="FAIL" starttime="20220630 23:50:12.072" endtime="20220630 23:50:13.838"/>
+<status status="FAIL" starttime="20220630 23:57:01.260" endtime="20220630 23:57:03.137"/>
 </for>
-<status status="FAIL" starttime="20220630 23:50:12.071" endtime="20220630 23:50:13.839"/>
+<status status="FAIL" starttime="20220630 23:57:01.260" endtime="20220630 23:57:03.138"/>
 </kw>
-<status status="FAIL" starttime="20220630 23:50:11.887" endtime="20220630 23:50:13.839"/>
+<status status="FAIL" starttime="20220630 23:57:01.069" endtime="20220630 23:57:03.138"/>
 </kw>
 <kw name="End Baykar Web Test" library="Common" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220630 23:50:13.841" endtime="20220630 23:50:14.524"/>
+<status status="PASS" starttime="20220630 23:57:03.140" endtime="20220630 23:57:03.784"/>
 </kw>
-<status status="PASS" starttime="20220630 23:50:13.841" endtime="20220630 23:50:14.524"/>
+<status status="PASS" starttime="20220630 23:57:03.139" endtime="20220630 23:57:03.785"/>
 </kw>
 <doc>All visitors should be able navigate footer links</doc>
 <tag>Footer</tag>
 <tag>Smoke</tag>
-<status status="FAIL" starttime="20220630 23:49:56.952" endtime="20220630 23:50:14.524">ElementClickInterceptedException: Message: Element &lt;a href="https://www.baykartech.com/tr/yonetim/"&gt; is not clickable at point (616,721) because another element &lt;div class="se-pre-con"&gt; obscures it
+<status status="FAIL" starttime="20220630 23:56:46.505" endtime="20220630 23:57:03.785">ElementClickInterceptedException: Message: Element &lt;a href="https://www.baykartech.com/tr/yonetim/"&gt; is not clickable at point (616,721) because another element &lt;div class="se-pre-con"&gt; obscures it
 Stacktrace:
 WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
 ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.jsm:285:5
@@ -225,9 +240,9 @@ receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild
 </status>
 </test>
 <doc>This test file includes all tests for *kariyer.baykartech.com*, if you wanna change Browser or Runtime Language go to *Variables* section in this file.</doc>
-<status status="FAIL" starttime="20220630 23:49:56.745" endtime="20220630 23:50:14.526"/>
+<status status="FAIL" starttime="20220630 23:56:46.294" endtime="20220630 23:57:03.786"/>
 </suite>
-<status status="FAIL" starttime="20220630 23:49:56.727" endtime="20220630 23:50:14.529"/>
+<status status="FAIL" starttime="20220630 23:56:46.276" endtime="20220630 23:57:03.788"/>
 </suite>
 <statistics>
 <total>
