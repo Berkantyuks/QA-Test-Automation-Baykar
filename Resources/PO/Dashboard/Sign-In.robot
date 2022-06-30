@@ -3,7 +3,7 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${SIGN_IN_ELEMENT} =    xpath=//button[@id='kt_sign_in_submit']
-${FORGET_PASS_LINK} =   xpath=//*[@id="loginForm"]//a[contains(@href, '/password/reset/')]
+${FORGET_PASS_LINK} =   xpath=//form[@id="loginForm"]//a[contains(@href, '/password/reset/')]
 
 *** Keywords ***
 Verify Page Loaded
@@ -12,4 +12,4 @@ Verify Page Loaded
     Page Should Contain Link    ${FORGET_PASS_LINK}
 
 Click "Forget Password" link
-    Click Link    ${FORGET_PASS_LINK}
+    Click Element    ${FORGET_PASS_LINK}

@@ -8,7 +8,7 @@ Library    SeleniumLibrary
 ${PAGE_END} =    xpath=//p[contains(., '© 2015-2022 BAYKAR TECH')]
 *** Keywords ***
 Scroll to end of the page
-    Scroll Element Into View    ${PAGE_END}
+    Run Keyword And Ignore Error    Scroll Element Into View    ${PAGE_END}
 
 Navigate footer elements in loop
     [Documentation]    Clicks all footer links by created list

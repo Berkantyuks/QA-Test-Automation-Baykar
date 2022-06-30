@@ -1,0 +1,16 @@
+1656621571327	geckodriver	INFO	Listening on 127.0.0.1:50938
+1656621574393	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50939" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\byuks\\AppData\\Local\\Temp\\rust_mozprofileSQl50G"
+1656621574639	Marionette	INFO	Marionette enabled
+1656621574643	Marionette	INFO	Listening on port 50948
+WebDriver BiDi listening on ws://localhost:50939
+Read port: 50948
+1656621574845	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\byuks\\AppData\\Local\\Temp\\rust_mozprofileSQl50G\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50939/devtools/browser/26c28c69-8510-4958-bc69-07af6a71e54a
+JavaScript error: https://cdnik.baykartech.com/static/assets/js/custom/authentication/sign-up/general.js, line 1: TypeError: e is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://kariyer.baykartech.com"
+JavaScript error: https://cdnik.baykartech.com/static/assets/js/custom/authentication/sign-up/general.js, line 1: TypeError: e is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://kariyer.baykartech.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://kariyer.baykartech.com"
+JavaScript error: https://cdnik.baykartech.com/static/assets/js/custom/authentication/sign-up/general.js, line 1: TypeError: e is null
+1656621587906	Marionette	INFO	Stopped listening on port 50948

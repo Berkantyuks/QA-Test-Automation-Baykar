@@ -3,7 +3,7 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${FORGET_PASS_ELEMENT} =    xpath=//button[@id='kt_sign_in_submit']
-${CREATE_ACC_LINK} =    xpath=//*[@id="loginForm"]//a[contains(@href, '/signup/')]
+${CREATE_ACC_LINK} =    xpath=//form[@id="loginForm"]//a[contains(@href, '/signup/')]
 
 *** Keywords ***
 Verify Page Loaded
@@ -12,7 +12,7 @@ Verify Page Loaded
     Page Should Contain Link    ${CREATE_ACC_LINK}
 
 Click "Create Account" Link
-    Click Link    ${CREATE_ACC_LINK}
+    Click Element    ${CREATE_ACC_LINK}
 
 
 

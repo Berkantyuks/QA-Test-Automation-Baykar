@@ -108,5 +108,5 @@ Change Language
 Click "Dashboard/Login" button
     [Arguments]    ${LANG}
     [Documentation]    Clicks dashboard button by lang, in navbar located right
-    ${NAVBAR_DASHBOARD_BUTTON} =  Set Variable   xpath=//a[contains(@href, '/${LANG}/dashboard')]
-    Click Link    ${NAVBAR_DASHBOARD_BUTTON}
+    ${NAVBAR_DASHBOARD_BUTTON} =  Set Variable   xpath=//nav//a[contains(@href, '/${LANG}/dashboard')]
+    Click Element    ${NAVBAR_DASHBOARD_BUTTON}
