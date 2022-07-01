@@ -51,6 +51,8 @@ Click "Kariyer" Section Dropdowns and Check Page
     Navbar.Click "Yerleşkelerimiz" Dropdown
     Kariyer.Verify "Yerleşkelerimiz" in show
 
+    Common.Scroll to Top of The Page
+
     Navbar.Click "Sunduğumuz Faydalar" Dropdown
     Kariyer.Verify "Sosyal Alanlar" in show
 

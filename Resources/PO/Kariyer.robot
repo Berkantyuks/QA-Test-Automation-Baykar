@@ -15,7 +15,6 @@ ${BENEFITS_DEFAULT} =    xpath=//div[@id='benefits']//div[@class='item']//
 @{BENEFITS_LIST_EN} =    h4[.='EDUCATION']    h4[.='SHUTTLE SERVICE']    h4[.='SOCIAL LIFE']    h4[.='HEALTH']    h4[.='NURSERY']
 
 *** Keywords ***
-
 Verify "Yerleşkelerimiz" in show
     Wait Until Element Is Visible    ${YERLESKELER_VERIFY_ELEMENT}
     Page Should Contain Element    ${YERLESKELER_VERIFY_ELEMENT}
@@ -43,7 +42,7 @@ Click and Check "Benefits" panel in loop
 
     ${listed_len} =    create a list by number  ${list_len}
 
-    Scroll Element Into View    ${BENEFITS_LIST_XPATH}
+    Run Keyword And Ignore Error    Scroll Element Into View    ${BENEFITS_LIST_XPATH}
     Wait Until Element Is Visible    ${BENEFITS_LIST_XPATH}
     FOR    ${BENEFIT_TR}    ${BENEFIT_EN}    ${i}    IN ZIP    ${BENEFITS_LIST_TR}    ${BENEFITS_LIST_EN}    ${listed_len}
         Click Element    ${BENEFITS_LIST_XPATH}\//li[${i}\]

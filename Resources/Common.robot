@@ -22,6 +22,8 @@ Verify Page Loaded
 
     ${check_loader} =    Run Keyword And Return Status    Element Should Be Visible    ${PRE_LOADER}
     Run Keyword If  ${check_loader}   Wait Until Element Is Not Visible    ${PRE_LOADER}
+Scroll to Top of The Page
+    Run Keyword And Ignore Error    Execute javascript    window.scrollTo(0,0)
 
 End Baykar Web Test
     Close Browser
