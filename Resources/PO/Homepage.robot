@@ -37,7 +37,7 @@ Navigate main slider in loop
 Navigate open poz slider in loop
     [Arguments]    ${SLIDER_RANGE}    ${GEAR}
 
-    Scroll Element Into View    ${OPEN_POZ_SLIDER_NEXT_BUTTON}
+    Run Keyword And Ignore Error  Scroll Element Into View    ${OPEN_POZ_SLIDER_NEXT_BUTTON}
     FOR    ${i}    IN RANGE     ${SLIDER_RANGE}
 
         Run Keyword If  "${GEAR}" == "FORWARD"    Click Element    ${OPEN_POZ_SLIDER_NEXT_BUTTON}    ELSE    Click Element    ${OPEN_POZ_SLIDER_PREV_BUTTON}
@@ -48,7 +48,7 @@ Navigate open poz slider in loop
 Navigate life in baykar slider in loop
     [Arguments]    ${SLIDER_RANGE}    ${GEAR}
 
-    Scroll Element Into View    ${LIFE_IN_BAYKAR_SLIDER_NEXT_BUTTON}
+    Run Keyword And Ignore Error    Scroll Element Into View    ${LIFE_IN_BAYKAR_SLIDER_NEXT_BUTTON}
     FOR    ${i}    IN RANGE     ${SLIDER_RANGE}
 
         Run Keyword If  "${GEAR}" == "FORWARD"    Click Element    ${LIFE_IN_BAYKAR_SLIDER_NEXT_BUTTON}    ELSE    Click Element    ${LIFE_IN_BAYKAR_SLIDER_PREV_BUTTON}
@@ -59,7 +59,7 @@ Navigate life in baykar slider in loop
 Click all sss panels in loop
     [Arguments]    ${PANEL_RANGE}
 
-    Scroll Element Into View   ${SSS_CONTACT_SECTION}
+    Run Keyword And Ignore Error    Scroll Element Into View   ${SSS_CONTACT_SECTION}
     FOR    ${i}    IN RANGE    1    ${PANEL_RANGE}
         Click Element    ${SSS_PANEL_DEFAULT}\[${i}\]
         Sleep  0.5s

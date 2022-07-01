@@ -70,6 +70,8 @@ Click "Staj" Section Dropdowns and Check Page
     Navbar.Click "Staj Dönemleri" Dropdown
     Staj.Verify "Staj Dönemleri" in show
 
+    Common.Scroll to Top of The Page
+
     Navbar.Click "Staj Takvimi" Dropdown
     Staj.Verify "Staj Takvimi" in show
 

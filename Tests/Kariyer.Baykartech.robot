@@ -10,7 +10,7 @@ Test Teardown    End Baykar Web Test
 
 *** Variables ***
 ${SITE_URL} =    https://kariyer.baykartech.com/    # [!] DO NOT CHANGE SITE URL [!]
-${BROWSER} =    edge    # add browser driver in env. path before first run
+${BROWSER} =    firefox    # add browser driver in env. path before first run
 ${RUN_LANG} =    tr       # "tr" or "en" [!] lowercase [!]
 
 *** Test Cases ***
