@@ -4,6 +4,10 @@ Resource    ../Common.robot
 Resource    ../Baykartech.App.robot
 
 *** Variables ***
+# IMPORTANT, THIS LIST DEFINES FOOTER LINK PAGE IS INNER PAGE OR OUTER PAGE
+# 0 IS OUT, 1 IN according to the following lists.
+@{INNER_OR_OUTER_PAGE} =    0    0    0    1    1    1    1    1
+
 @{FOOTER_LINKS_TR} =    xpath=//footer//a[.="Hakkımızda"]    xpath=//footer//a[.="Yönetim"]
 ...    xpath=//footer//a[.="Tarihçe"]    xpath=//footer//a[.="Açık Pozisyonlar"]
 ...    xpath=//footer//a[.="İş"]    xpath=//footer//a[.="Staj"]
@@ -14,6 +18,7 @@ Resource    ../Baykartech.App.robot
 ...    xpath=//footer//a[.="Jobs"]    xpath=//footer//a[.="İntern"]
 ...    xpath=//footer//a[.="Communication"]    xpath=//footer//a[.="KVKK"]
 
+
 ${PAGE_END} =    xpath=//p[contains(., '© 2015-2022 BAYKAR TECH')]
 *** Keywords ***
 Scroll to end of the page
@@ -22,12 +27,12 @@ Scroll to end of the page
 Navigate footer elements in loop
     [Documentation]    Clicks all footer links by created list
     [Arguments]    ${LANG}
-    FOR   ${LINK_TR}  ${LINK_EN}  IN ZIP   ${FOOTER_LINKS_TR}    ${FOOTER_LINKS_EN}
+    FOR   ${LINK_TR}  ${LINK_EN}   ${IN_OUT}  IN ZIP   ${FOOTER_LINKS_TR}    ${FOOTER_LINKS_EN}    ${INNER_OR_OUTER_PAGE}
 
         Run Keyword If   "${LANG}" == "tr"   Click Link    ${LINK_TR}
         ...    ELSE IF    "${LANG}" == "en"    Click Link    ${LINK_EN}
 
-        ${con} =    Baykartech.App.Check Baykar's Main Site By Argument    ${LINK_EN}    ${LANG}
+        ${con} =    Baykartech.App.Check Baykar's Main Site By Argument    ${LINK_${LANG}}    ${LANG}    ${IN_OUT}
         Run Keyword If     ${con}    Go Back
 
         Common.Verify Page Loaded    ${LANG}
