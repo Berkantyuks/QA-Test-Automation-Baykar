@@ -32,8 +32,8 @@ Navigate footer elements in loop
         Run Keyword If   "${LANG}" == "tr"   Click Link    ${LINK_TR}
         ...    ELSE IF    "${LANG}" == "en"    Click Link    ${LINK_EN}
 
-        ${con} =    Baykartech.App.Check Baykar's Main Site By Argument    ${LINK_${LANG}}    ${LANG}    ${IN_OUT}
-        Run Keyword If     ${con}    Go Back
+        Run Keyword If   "${IN_OUT}" == "0"    Baykartech.App.Check Baykar's Main Site By Argument    ${LINK_${LANG}}    ${LANG}
+        Go Back
 
         Common.Verify Page Loaded    ${LANG}
         Wait Until Element Is Visible    ${PAGE_END}

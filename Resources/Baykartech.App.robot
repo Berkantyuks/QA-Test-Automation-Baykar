@@ -18,16 +18,16 @@ ${HISTORY_TEXTS_EN} =   History
 
 *** Keywords ***
 Check Baykar's Main Site By Argument
-    [Arguments]    ${PAGE}    ${LANG}    ${IN_OUT}
+    [Arguments]    ${PAGE}    ${LANG}
+
     ${ABOUT_CON}=  Evaluate   "${ABOUT_US_TEXTS_${LANG}}" in """${PAGE}"""
     ${MANAG_CON}=  Evaluate   "${MANAGEMENT_TEXTS_${LANG}}" in """${PAGE}"""
     ${HISTO_CON}=  Evaluate   "${HISTORY_TEXTS_${LANG}}" in """${PAGE}"""
 
-    IF    "${IN_OUT}" == "0"
         Run Keyword If  ${ABOUT_CON}  About.Verify Page Loaded
         ...    ELSE IF    ${MANAG_CON}    Management.Verify Page Loaded
         ...    ELSE IF    ${HISTO_CON}    History.Verify Page Loaded
         ...    ELSE       FAIL
-    END
+
 
     [Return]    True
