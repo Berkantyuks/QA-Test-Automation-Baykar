@@ -6,7 +6,7 @@ Resource    ../Baykartech.App.robot
 *** Variables ***
 # IMPORTANT, THIS LIST DEFINES FOOTER LINK PAGE IS INNER PAGE OR OUTER PAGE
 # 0 IS OUT, 1 IN according to the following lists.
-@{INNER_OR_OUTER_PAGE} =    0    0    0    1    1    1    1    1
+@{INNER_OR_OUTER_PAGE} =    0    0    0    1    1    1    1
 
 @{FOOTER_LINKS_TR} =    xpath=//footer//a[.="Hakkımızda"]    xpath=//footer//a[.="Yönetim"]
 ...    xpath=//footer//a[.="Tarihçe"]    xpath=//footer//a[.="Açık Pozisyonlar"]

@@ -10,7 +10,7 @@ Test Teardown    End Baykar Web Test
 
 *** Variables ***
 ${SITE_URL} =    https://kariyer.baykartech.com/    # [!] DO NOT CHANGE SITE URL [!]
-${BROWSER} =    firefox    # add browser driver in env. path before first run
+${BROWSER} =    edge    # add browser driver in env. path before first run
 ${RUN_LANG} =    tr       # "tr" or "en" [!] lowercase [!]
 
 *** Test Cases ***
@@ -51,7 +51,6 @@ Visitor should be able navigate all sliders and panels
     Common.Verify Page Loaded    ${RUN_LANG}
     Kariyer.Baykartech.App.Navigate "Main" Slider
     Kariyer.Baykartech.App.Navigate "Open Positions" Slider
-    Kariyer.Baykartech.App.Navigate "Life in Baykar" Slider
     Kariyer.Baykartech.App.Navigate SSS Panel Lists
 
 Visitor should be see "Login", "Forget Password", "Create Account" pages
@@ -77,4 +76,3 @@ Check System Page integration is Stable
     Common.Verify Page Loaded    ${RUN_LANG}
     Kariyer.Baykartech.App.Navigate "Career" page to "Open Positions" Section
     Kariyer.Baykartech.App.Navigate "Intern" page to "Open Positions" Section
-    Kariyer.Baykartech.App.Navigate "Intern" page to "Life In Baykar" Section

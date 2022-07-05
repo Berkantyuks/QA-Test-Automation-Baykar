@@ -32,9 +32,6 @@ Click non dropdown sections
     Navbar.Click "Açık Pozisyonlar" Section
     Homepage.Verify Section is Visible    ${OPEN_POZ_SECTION}
 
-    Navbar.Click "Baykarda Yaşam" Section
-    Homepage.Verify Section is Visible    ${BAYKAR_LIFE_SECTION}
-
     Navbar.Click "S.S.S" Section
     Homepage.Verify Section is Visible    ${SSS_SECTION}
 

@@ -6,7 +6,7 @@ Library    ../../Libraries/CreateList.py
 ${YERLESKELER_VERIFY_ELEMENT} =    xpath=//ul[@class='nav nav-pills']//a[@href='#campus1']
 ${FAYDALAR_VERIFY_ELEMENT} =    xpath=//div[@id='benefits']
 ${ALANLAR_VERIFY_ELEMENT} =    xpath=//div[@id='life_in_baykar']
-${ISTATISTIKLER_VERIFY_ELEMENT} =    xpath=//div[@id='personal_data']
+${ISTATISTIKLER_VERIFY_ELEMENT} =    xpath=//div[@id='personal']
 
 
 ${BENEFITS_LIST_XPATH} =    xpath=//div[@id='benefits']//ul[@class='nav nav-pills w-100 d-flex justify-content-center']
