@@ -19,6 +19,25 @@ be Easy-To-Read, Easy-To-Maintain and Easy-To-Understand. File Includes: </p>
  </ul>
  <p>Overall System Score: B+, Given Test Class A Mark.(Please see QA PDF File for more info: Page 12.)</br> Test File Index: TEST-001-A</p>
  
+ ### Prepare and clone repository for TeamCity or Jenkins CI/CD
+ 
+ First of all, install all requirements using pip.
+ ```
+pip install -r requirements.txt
+ ```
+ [Optional] Clone for CI/CD integration.
+ ```
+https://github.com/Berkantyuks/QA-Test-Automation-Baykar.git
+ ```
+ ### Set Variables Before Running Tests
+ 
+ ```robot framework
+*** Variables ***
+${SITE_URL} =    https://kariyer.baykartech.com/    # [!] DO NOT CHANGE SITE URL [!]
+${BROWSER} =    edge    # add browser driver in env. path before first run
+${RUN_LANG} =    tr       # "tr" or "en" [!] lowercase [!]
+ ```
+ 
  ### You Can Reach QA Test PDF File From Link Below
  <a href="https://github.com/Berkantyuks/QA-Test-Automation-Baykar/blob/main/Documents/Berkant-Yuksektepe-QA-Project-Updated.pdf">Berkant-Yuksektepe-QA-Project-Updated.pdf</a>
  
