@@ -2,8 +2,8 @@
  ![RobotFramework](https://img.shields.io/badge/Robot%20Framework-000000?style=for-the-badge&logo=robot-framework&logoColor=white)
  ![Selenium](https://img.shields.io/badge/Selenium-000000?style=for-the-badge&logo=Selenium&logoColor=white)
  ![Git](https://img.shields.io/badge/GIT-000000?style=for-the-badge&logo=git&logoColor=white)
- ![ChromeDriver](https://img.shields.io/badge/Google_chrome-000000?style=for-the-badge&logo=Google-chrome&logoColor=white)
- <a href="https://stackoverflow.com/users/12253288/highhill?theme=dark"><img src="https://stackoverflow.com/users/flair/12253288.png?theme=dark" width="100px" alt="profile for HighHill at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for HighHill at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a>
+  ![TEST-001-A](https://img.shields.io/badge/Test%20001%20A-000000?style=for-the-badge&logo=null&logoColor=white)
+  <a href="https://github.com/Berkantyuks/QA-Project-Test-Classification-Mark" rel="tc-a"><img width="79px" style="border-width: 0;" src="https://github.com/Berkantyuks/QA-Project-Test-Classification-Mark/blob/main/TCM-114x40/114x40-tc-a.png" alt="tc-a" /></a>
  
  <p>Software All-Encompassing QA Test Project For Baykar's Career Website. Automated tests are Designed for
 be Easy-To-Read, Easy-To-Maintain and Easy-To-Understand. File Includes: </p>
@@ -17,7 +17,11 @@ be Easy-To-Read, Easy-To-Maintain and Easy-To-Understand. File Includes: </p>
  <li>QA: General Opinion</li>
  <li>QA: Rating</li>
  </ul>
- <p>Overall System Score: B+, Given Test Class A Mark.(Please see QA PDF File for more info: Page 12.)</br> Test File Index: TEST-001-A</p>
+ <p>Overall System Score: B+, Given Test Class A Mark.(Please see QA PDF File for more info: Page 12.)<br/>
+ For more information about <a href="https://github.com/Berkantyuks/QA-Project-Test-Classification-Mark">Test Classification Marks</a> visit project repo.
+ </br> 
+ 
+ Test File Index: TEST-001-A</p>
  
  ### Prepare and clone repository for TeamCity or Jenkins CI/CD
  
@@ -74,6 +78,7 @@ robot -d results tests
 ![image10](https://user-images.githubusercontent.com/61010367/176453008-4909fe83-7ac4-4aae-b281-12ed4a6983fa.png)
 ![image11](https://user-images.githubusercontent.com/61010367/176453071-2184e507-bc34-41c1-9559-8e7c2876c807.png)
 ![image12](https://user-images.githubusercontent.com/61010367/176453158-89a71ab3-5c7e-4323-95df-a51a6b3d65aa.png)
+
 
 
 
