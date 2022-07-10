@@ -34,8 +34,23 @@ https://github.com/Berkantyuks/QA-Test-Automation-Baykar.git
  ```robot framework
 *** Variables ***
 ${SITE_URL} =    https://kariyer.baykartech.com/    # [!] DO NOT CHANGE SITE URL [!]
-${BROWSER} =    edge    # add browser driver in env. path before first run
+${BROWSER} =    chrome    # add browser driver in env. path before first run
 ${RUN_LANG} =    tr       # "tr" or "en" [!] lowercase [!]
+ ```
+ 
+ ### Execute Automated Tests
+ 
+ Execute tests using terminal, for run all tests under tests folder then save results in <a href="https://github.com/Berkantyuks/QA-Test-Automation-Baykar/tree/main/Results">Results</a> folder.
+ ```
+robot -d results tests
+ ```
+ Execute by tag name.
+ ```
+ robot -d results -i "Common" tests
+ ```
+ Execute by test case name.
+ ```
+ robot -d results -t "Visitor should be able enter site" tests 
  ```
  
  ### You Can Reach QA Test PDF File From Link Below
