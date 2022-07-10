@@ -25,6 +25,10 @@ be Easy-To-Read, Easy-To-Maintain and Easy-To-Understand. File Includes: </p>
  ```
 pip install -r requirements.txt
  ```
+ Download ChromeDriver in your computer and add Environment Variables path for Selenium.
+ ```
+https://chromedriver.chromium.org/
+ ```
  [Optional] Clone for CI/CD integration.
  ```
 https://github.com/Berkantyuks/QA-Test-Automation-Baykar.git
