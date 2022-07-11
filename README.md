@@ -2,8 +2,8 @@
  ![RobotFramework](https://img.shields.io/badge/Robot%20Framework-000000?style=for-the-badge&logo=robot-framework&logoColor=white)
  ![Selenium](https://img.shields.io/badge/Selenium-000000?style=for-the-badge&logo=Selenium&logoColor=white)
  ![Git](https://img.shields.io/badge/GIT-000000?style=for-the-badge&logo=git&logoColor=white)
-  ![TEST-001-A](https://img.shields.io/badge/Test%20001%20A-000000?style=for-the-badge&logo=null&logoColor=white)
-  <a href="https://github.com/Berkantyuks/QA-Project-Test-Classification-Mark" rel="tc-a"><img width="79px" style="border-width: 0;" src="https://github.com/Berkantyuks/QA-Project-Test-Classification-Mark/blob/main/TCM-114x40/114x40-tc-a.png" alt="tc-a" /></a>
+ ![TEST-001-A](https://img.shields.io/badge/Test%20001%20A-000000?style=for-the-badge&logo=null&logoColor=white)
+<a href="https://github.com/Berkantyuks/QA-Project-Test-Classification-Mark#test-class-a" rel="tc-a"><img width="79px" style="border-width: 0;" src="https://github.com/Berkantyuks/QA-Project-Test-Classification-Mark/blob/main/TCM-114x40/114x40-tc-a.png" alt="tc-a" /></a>
  
  <p>Software All-Encompassing QA Test Project For Baykar's Career Website. Automated tests are Designed for
 be Easy-To-Read, Easy-To-Maintain and Easy-To-Understand. File Includes: </p>
