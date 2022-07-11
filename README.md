@@ -61,6 +61,20 @@ robot -d results tests
  robot -d results -t "Visitor should be able enter site" tests 
  ```
  
+  ### Read Manual Tests
+  
+  Manual tests are executed last on 6/20/2022
+  
+| Step #  | Description                   | Expected Result              | Actual Result       | Execution Status |
+| ------- | ----------------------------- | ---------------------------- | ------------------- | ---------------- |
+| 1       | Visitor must enter site       | Show kariyer baykar homepage | Homepage opens      | PASS             |
+| 2       | Visitor must navigate navbar  | Show dropdown menus          | Shows all dropdowns | PASS             |
+| 3       | Visitor should be able to switch language  | Show English homepage  | English homepage opens | PASS   |
+| ......... |
+
+for more about manual tests visit to https://github.com/Berkantyuks/QA-Test-Automation-Baykar/blob/main/Documents/QA-Manual-Test-Baykar.pdf
+ 
+ 
  ### You Can Reach QA Test PDF File From Link Below
  <a href="https://github.com/Berkantyuks/QA-Test-Automation-Baykar/blob/main/Documents/Berkant-Yuksektepe-QA-Project-Updated.pdf">Berkant-Yuksektepe-QA-Project-Updated.pdf</a>
  
